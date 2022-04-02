@@ -3,6 +3,8 @@ import Button from 'react-bootstrap/Button'
 
 import MatchCard from '../cards/matchcard'
 import GamerCard from '../cards/gamercard'
+import TopLeaderCard from '../cards/topleadercard'
+import LeaderTaleCard from '../cards/leadertablecard'
 
 import IMG_GAME_LOGO from '../../assets/images/tokens/arcader-token-lg.png'
 import IMG_GAME_EFFECT01 from '../../assets/images/effects/effect01.png'
@@ -33,6 +35,17 @@ import IMG_AVA_USER04 from '../../assets/images/gamers/gamer04.png'
 
 import IMG_YOUTUBE_ICO from '../../assets/images/icons/youtubu.png'
 import IMG_TWITCH_ICO from '../../assets/images/icons/twitch.png'
+
+import IMG_GOLD_LEADER from '../../assets/images/leaders/gold-leader.png'
+import IMG_SILVER_LEADER from '../../assets/images/leaders/silver-leader.png'
+import IMG_BRONZE_LEADER from '../../assets/images/leaders/bronze-leader.png'
+
+import IMG_LEADER04 from '../../assets/images/leaders/leader04.png'
+import IMG_LEADER05 from '../../assets/images/leaders/leader05.png'
+import IMG_LEADER06 from '../../assets/images/leaders/leader06.png'
+import IMG_LEADER07 from '../../assets/images/leaders/leader07.png'
+import IMG_LEADER08 from '../../assets/images/leaders/leader08.png'
+import IMG_LEADER09 from '../../assets/images/leaders/leader09.png'
 
 const Landing = () => {
     return (
@@ -250,6 +263,123 @@ const Landing = () => {
                                 <div className='socail-sub-texts-r'><span>Twitch subscribers</span></div>
                                 {/* <img src={IMG_EFFECT_TWITCH} alt='twich-effect' className='eclipse-effect' /> */}
                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='leader-board'>
+                    <div className='leader-board-title-section'>
+                        <span className='leaderboard-title'>Leaderboard</span><br />
+                        <span className='leaderboard-detail'>For most project participants, the Arcader platform is a good income. Play and earn money!</span>
+                    </div>
+
+                    <div className='top-leaders-section'>
+                        <TopLeaderCard
+                            ranking={'2'}
+                            avatar={IMG_SILVER_LEADER}
+                            nickname={'Floyd Miles'}
+                            ardamount={'19,950'}
+                        />
+                        <TopLeaderCard
+                            ranking={'1'}
+                            avatar={IMG_GOLD_LEADER}
+                            nickname={'SuperJetpack'}
+                            ardamount={'20,900'}
+                        />
+                        <TopLeaderCard
+                            ranking={'3'}
+                            avatar={IMG_BRONZE_LEADER}
+                            nickname={'Jane Cooper'}
+                            ardamount={'18,811'}
+                        />
+                    </div>
+
+                    <div className='leaders-table-section'>
+                        <LeaderTaleCard 
+                            ranking={'4'}
+                            avatar={IMG_LEADER04}
+                            nickname={'Esther Howard'}
+                            profitability={'91.2'}
+                            avg_bet={'2,023'}
+                            max_bet={'ARD 3,716'}
+                            earning={'17,111'}
+                        />
+                        <LeaderTaleCard 
+                            ranking={'5'}
+                            avatar={IMG_LEADER05}
+                            nickname={'Albert Flores'}
+                            profitability={'22.5'}
+                            avg_bet={'20,000'}
+                            max_bet={'98,000'}
+                            earning={'15,900'}
+                        />
+                        <LeaderTaleCard 
+                            ranking={'6'}
+                            avatar={IMG_LEADER06}
+                            nickname={'Ralph Edwards'}
+                            profitability={'11.2'}
+                            avg_bet={'12,000'}
+                            max_bet={'11,500'}
+                            earning={'12,950'}
+                        />
+                        <LeaderTaleCard 
+                            ranking={'7'}
+                            avatar={IMG_LEADER07}
+                            nickname={'Wade Warren'}
+                            profitability={'91.9'}
+                            avg_bet={'15,700'}
+                            max_bet={'16,200'}
+                            earning={'10,000'}
+                        />
+                        <LeaderTaleCard 
+                            ranking={'8'}
+                            avatar={IMG_LEADER08}
+                            nickname={'Robert Fox'}
+                            profitability={'63.1'}
+                            avg_bet={'13,950'}
+                            max_bet={'10,570'}
+                            earning={'9,900'}
+                        />
+                        <LeaderTaleCard 
+                            ranking={'9'}
+                            avatar={IMG_LEADER09}
+                            nickname={'Esther Howard'}
+                            profitability={'91.2'}
+                            avg_bet={'2,023'}
+                            max_bet={'3,716'}
+                            earning={'6,811'}
+                        />
+                        <div className='gold-crown-effect'></div>
+                        <div className='bronze-crown-effect'></div>
+                    </div>
+                </div>
+
+                <div className='about-arcader'>
+                    <div className='about-title-section'>
+                        <span className='brand-title'>About <span className='spec-brand'>Arcader</span></span>
+                    </div>
+                    <div className='about-detail-section'>
+                        <span className='about-detail'>
+                            Arcader is the most popular gaming platform today. The goal of our company is to renew the world and change the world for the better. A team of professionals worked on the creation of this service We strive to make sure that every person who loves games can also earn money on them.
+                        </span>
+                    </div>
+
+                    <div className='about-status'>
+                        <div className='sub-status'>
+                            <div className='status-value'>$ARD 2,023,351</div>
+                            <div className='status-title'>Total earnings</div>
+                        </div>
+                        <div className='sub-status'>
+                            <div className='status-value'>128,658</div>
+                            <div className='status-title'>Players</div>
+                        </div>
+                        <div className='sub-status'>
+                            <div className='status-value'>43,619</div>
+                            <div className='status-title'>Games everyday</div>
+                        </div>
+                        <div className='sub-status'>
+                            <div className='status-value'>2,815</div>
+                            <div className='status-title'>New players today</div>
                         </div>
                     </div>
                 </div>

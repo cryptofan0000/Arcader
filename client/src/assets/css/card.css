@@ -186,3 +186,123 @@
     font-size: 14px;
     color: #8997A9;
 }
+
+.top-leader-avatar {
+    position: relative;
+}
+
+.top-crown-img {
+    width: 65px;
+    height: 41px;
+    position: absolute;
+    top: -20px;
+    left: 20px;
+}
+
+.top-leader-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leader-nickname {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+}
+
+.leader-earning {
+    color: #8997A9;
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.leader-ard {
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.leader-detail {
+    margin-left: 20px;
+}
+
+.leader-table-section {
+    width: 1350px;
+    height: 90px;
+    border-radius: 12px;
+    margin-left: calc((100% - 1350px) / 2);
+    margin-top: 20px;
+    background-color: #191D2D;
+    border: solid 1px #171C2F;
+    display: flex;
+    justify-content: space-between;
+}
+
+.table-col-ranking {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 10%;
+}
+
+.table-col-ranking > span {
+    color: #8997A9;
+}
+
+.table-col-leader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+
+.leader-avatar {
+    width: 52px;
+    height: 52px;
+}
+
+.leader-nickname-sub {
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-left: 10px;
+}
+
+.table-col-detail {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.table-col-result {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+}
+
+.sub-col-title {
+    color: #626F8C;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.sub-col-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.sub-col-detail {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.earning-value {
+    color: #FED262;
+}

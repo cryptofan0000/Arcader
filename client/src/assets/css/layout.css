@@ -86,6 +86,7 @@
 
 .landing-section {
     margin-top: 69px;
+    overflow-x: hidden;
 }
 
 .game-platform {
@@ -360,8 +361,6 @@
 
 .social-icons {
     margin-right: 20px;
-    width: 45px;
-    height: 45px;
 }
 
 .socail-sub-texts-l>span {
@@ -382,4 +381,141 @@
     text-align: left;
     padding-left: 200px;
     margin-top: 10px;
+}
+
+.leader-board {
+    margin-top: 10px;
+}
+
+.leader-board-title-section {
+    text-align: center;
+    margin-top: 160px;
+}
+
+.leaderboard-title {
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.leaderboard-detail {
+    font-size: 16px;
+    color: #8997A9;
+}
+
+.top-leaders-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 125px;
+    width: 80%;
+    max-width: 1080px;
+    margin-left: calc((100% - 1080px) / 2);
+}
+
+.leaders-table-section {
+    margin-top: 64px;
+    position: relative;
+    max-width: 1350px;
+    margin-left: calc((100% - 1350px) / 2);
+}
+
+.gold-crown-effect {
+    background-image: url('../images/leaders/gold-crown-lg.png');
+    background-repeat: no-repeat;
+    width: 279px;
+    height: 242px;
+    position: absolute;
+    right: -150px;
+    bottom: 35px;
+}
+
+.bronze-crown-effect {
+    background-image: url('../images/leaders/bronze-crown-md.png');
+    background-repeat: no-repeat;
+    width: 106px;
+    height: 94px;
+    position: absolute;
+    left: -60px;
+    top: 130px;
+    z-index: -1;
+}
+
+.leaders-table-section div:nth-child(4) {
+    transform: rotate(-0.8deg);
+}
+
+.leaders-table-section div:nth-child(5) {
+    transform: rotate(0.3deg);
+}
+
+.leaders-table-section div:nth-child(6) {
+    transform: rotate(0.9deg);
+}
+
+.about-arcader {
+    margin-top: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.about-detail-section {
+    width: 703px;
+    text-align: center;
+}
+
+.about-detail {
+    color: #8997A9;
+    font-size: 16px;
+}
+
+.about-status {
+    width: 921px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sub-status {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.status-value {
+    font-size: 32px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.status-title {
+    color: #8997A9;
+    font-size: 14px;
+}
+
+.footer-section {
+    width: calc(100% - 334px);
+    height: 57px;
+    border-top: solid 1px #252C46;
+    margin-left: 167px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copy-right {
+    color: #3D475F;
+    font-size: 12px;
+}
+
+.services-text {
+    color: #3D475F;
+    font-size: 12px;
+    margin-left: 50px;
 }
