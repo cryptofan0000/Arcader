@@ -1,0 +1,188 @@
+.match-card {
+    width: 379px;
+    height: 339px;
+    background-image: url('../images/games/match-card-bg.png');
+    background-repeat: no-repeat;
+    background-color: #171928;
+    border-radius: 12px;
+    position: relative;
+}
+
+.cs-icon-area {
+    background-image: url('../images/icons/cs-icon.png');
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.custom-row {
+    width: 100% !important;
+    margin: 0px !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-top-row {
+    margin-top: 44px !important;
+}
+
+.match_card_map_name {
+    font-size: 14px;
+}
+
+.match_card_start_time {
+    font-size: 24px;
+}
+
+.match_price_value {
+    color: #FED262;
+    font-size: 20px;
+}
+
+.match_card_staked_match {
+    width: 113px !important;
+    height: 22px;
+    background-color: #17ed6c60;
+    color: #17ed6c;
+    border-radius: 6px;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 0px !important;
+    padding-top: 2px !important;
+}
+
+.time_row {
+    margin-top: 5px !important;
+}
+
+.staked_match_row {
+    margin-top: 10px !important;
+    justify-content: center;
+}
+
+.detail_row {
+    margin-top: 40px !important;
+}
+
+.detail-text-span {
+    color: #8997A9;
+}
+
+.detail-value-span {
+    font-size: 20px;
+}
+
+.card-bottom-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px !important;
+}
+
+.fee-title {
+    font-size: 14px;
+    color: #8997A9;
+}
+
+.fee-value {
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.fee-span {
+    text-align: left;
+}
+
+.more-btn-section {
+    width: 150px;
+    height: 52px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.more-btn-ico {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+
+.gamer-card-section {
+    width: 321px;
+    height: 500px;
+    border-radius: 12px;
+    background-color: #171928;
+    border: solid 1px #171C2F;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.game-icon-area {
+    position: relative;
+}
+
+.game-icon-sets01 {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 32px;
+    height: 32px;
+}
+
+.game-icon-sets02 {
+    position: absolute;
+    right: 60px;
+    top: 20px;
+    width: 32px;
+    height: 32px;
+}
+
+.gamer_section {
+    text-align: center;
+    margin-top: 61px;
+}
+
+.gamer-name-section {
+    margin-top: 29px;
+    padding-left: 20px;
+}
+
+.gamer-name-value {
+    font-size: 20px;
+    margin-left: 10px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.gamer-intro-value {
+    color: #8997A9;
+    font-size: 14px;
+}
+
+.gamer-intro {
+    padding: 20px;
+}
+
+.gamer-socials {
+    display: flex;
+    justify-content: space-around;
+}
+
+.youtubu-panel, .twitch-panel {
+    text-align: center;
+}
+
+.visitors-count {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.youtubu-name {
+    font-size: 14px;
+    color: #8997A9;
+}

@@ -83,3 +83,303 @@
     font-size: 16px !important;
     border-color: #8462FF !important;
 }
+
+.landing-section {
+    margin-top: 69px;
+}
+
+.game-platform {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.game-logo-section {
+    z-index: 2;
+}
+
+.game-logo-img {
+    width: 75px;
+    height: 68px;
+}
+
+.game-main-intro-span {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.game-name-span {
+    color: #7C46F1;
+}
+
+.game-intro-section {
+    z-index: 2;
+}
+
+.game-password-info {
+    text-align: center;
+    color: #8997A9;
+    font-size: 16px;
+}
+
+.join-login-area {
+    justify-content: center !important;
+    margin-top: 20px !important;
+}
+
+.join-login-btn {
+    font-size: 16px;
+    background-color: #8462FF !important;
+    border-color: #8462FF !important;
+    border-radius: 12px !important;
+    width: 340px !important;
+    height: 52px !important;
+    margin-top: 20px;
+}
+
+.effect-wallpaper01 {
+    position: absolute;
+    left: calc((100% - 998px) / 2);
+    top: 256px;
+}
+
+.effect-wall-01 {
+    width: 998px;
+    height: 576px;
+}
+
+.effect-wallpaper03 {
+    position: absolute;
+    left: calc((100% - 742px) / 2);
+    top: 561px;
+}
+
+.effect-wall-03 {
+    width: 742px;
+    height: 259px;
+}
+
+.character02-img {
+    top: 534px;
+    position: absolute;
+    left: calc((100% - 768px) / 2 - 140px);
+}
+
+.character01-img {
+    position: absolute;
+    left: calc((100% - 768px) / 2);
+    top: 468px;
+    z-index: 3;
+}
+
+.character03-img {
+    position: absolute;
+    left: calc((100% - 768px) / 2 + 405px);
+    top: 558px;
+}
+
+.upcoming-games {
+    margin-top: 1125px;
+    text-align: center;
+    width: 1200px;
+    margin-left: calc((100% - 1200px) / 2);
+}
+
+.upcoming-title-span {
+    font-size: 50px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.upcoming-spec {
+    color: #7C46F1;
+}
+
+.upcoming-detail-span {
+    font-size: 16px;
+    color: #8997A9;
+}
+
+.game-section-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 103px;
+}
+
+.game-section-card {
+    width: 392px;
+    height: 100px;
+    background-size: cover;
+    background-repeat: none;
+    border-radius: 12px;
+    border: solid 1px #8462FF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cs-game-section-card {
+    background-image: url('../images/games/cs-section-bg.png');
+}
+
+.co-game-section-card {
+    background-image: url('../images/games/co-section-bg.png');
+}
+
+.ft-game-section-card {
+    background-image: url('../images/games/ft-section-bg.png');
+}
+
+.match-cards {
+    margin-top: 124px;
+}
+
+.match-card-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.shadow-area {
+    width: 1178px;
+    height: 294px;
+    margin-top: -250px;
+    z-index: 4;
+    margin-left: 10px;
+}
+
+.shadow-effect-img {
+    width: 100%;
+    height: auto;
+}
+
+.match-card-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seeall-btn {
+    width: 340px !important;
+    height: 52px !important;
+    border-radius: 12px !important;
+    background-color: #8462FF !important;
+    border-color: #8462FF !important;
+    margin-top: -26px;
+}
+
+.brand-ambassadors {
+    margin-top: 170px;
+}
+
+.brand-title-section {
+    text-align: center;
+}
+
+.brand-title {
+    font-size: 50px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.spec-brand {
+    color: #7C46F1;
+}
+
+.brand-detail-section {
+    text-align: center;
+}
+
+.brand-detail {
+    color: #8997A9;
+}
+
+.gamers-card-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-counts-section {
+    margin-top: 88px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-section-bg {
+    width: 1350px;
+    height: 150px;
+    background-color: #04060A;
+    border-radius: 12px;
+    display: flex;
+}
+
+.eclipse-effect {
+    width: 319px;
+    height: 150px;
+    left: 50%;
+}
+
+.youtube-texts {
+    width: 50%;
+    text-align: center;
+}
+
+.twitch-texts {
+    width: 50%;
+    text-align: center;
+}
+
+.youtube-counts-text {
+    color: #FFFFFF;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.socail-texts-l {
+    display: flex;
+    justify-content: right;
+    margin-right: 150px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.socail-texts-r {
+    display: flex;
+    justify-content: left;
+    margin-left: 150px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.social-icons {
+    margin-right: 20px;
+    width: 45px;
+    height: 45px;
+}
+
+.socail-sub-texts-l>span {
+    color: #8997A9 !important;
+}
+
+.socail-sub-texts-l {
+    text-align: right;
+    padding-right: 200px;
+    margin-top: 10px;
+}
+
+.socail-sub-texts-r>span {
+    color: #8997A9 !important;
+}
+
+.socail-sub-texts-r {
+    text-align: left;
+    padding-left: 200px;
+    margin-top: 10px;
+}
