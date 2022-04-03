@@ -1,5 +1,10 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 import Button from 'react-bootstrap/Button'
+
+import { connect } from 'react-redux'
+import PropTypes from 'prop-types'
+
+import { signinModalSet } from '../../actions/auth'
 
 import MatchCard from '../cards/matchcard'
 import GamerCard from '../cards/gamercard'
@@ -7,17 +12,15 @@ import TopLeaderCard from '../cards/topleadercard'
 import LeaderTaleCard from '../cards/leadertablecard'
 
 import IMG_GAME_LOGO from '../../assets/images/tokens/arcader-token-lg.png'
-import IMG_GAME_EFFECT01 from '../../assets/images/effects/effect01.png'
-// import IMG_GAME_EFFECT02 from '../../assets/images/effects/effect02.png'
-// import IMG_GAME_EFFECT03 from '../../assets/images/effects/effect03.png'
+import IMG_GAME_EFFECT01 from '../../assets/images/effects/main-effect.png'
 
-import IMG_CHARACTER01 from '../../assets/images/characters/character01.png'
-import IMG_CHARACTER02 from '../../assets/images/characters/character02.png'
-import IMG_CHARACTER03 from '../../assets/images/characters/character03.png'
+import IMG_CHARACTERS from '../../assets/images/characters/group01.png'
 
 import IMG_CS_GAME_LOGO from '../../assets/images/games/cs-section-title.png'
 import IMG_CO_GAME_LOGO from '../../assets/images/games/co-section-title.png'
 import IMG_FT_GAME_LOGO from '../../assets/images/games/ft-section-title.png'
+
+import IMG_UPCOMING_EFFECT from '../../assets/images/effects/upcoming-effect.png'
 
 import IMG_SHADOW_EFFECT from '../../assets/images/effects/shadow.png'
 
@@ -30,6 +33,8 @@ import IMG_AVA_USER02 from '../../assets/images/gamers/gamer02.png'
 import IMG_AVA_USER03 from '../../assets/images/gamers/gamer03.png'
 import IMG_AVA_USER04 from '../../assets/images/gamers/gamer04.png'
 
+import IMG_BRAND_EFFECT from '../../assets/images/effects/brand-effect.png'
+
 // import IMG_EFFECT_YOUTUBE from '../../assets/images/effects/ellipse-red.png'
 // import IMG_EFFECT_TWITCH from '../../assets/images/effects/ellipse-blue.png'
 
@@ -40,6 +45,9 @@ import IMG_GOLD_LEADER from '../../assets/images/leaders/gold-leader.png'
 import IMG_SILVER_LEADER from '../../assets/images/leaders/silver-leader.png'
 import IMG_BRONZE_LEADER from '../../assets/images/leaders/bronze-leader.png'
 
+import IMG_LEADER_EFFECT from '../../assets/images/effects/leader-effect.png'
+import IMG_LEADER_SHADOW from '../../assets/images/effects/leader-shadow.png'
+
 import IMG_LEADER04 from '../../assets/images/leaders/leader04.png'
 import IMG_LEADER05 from '../../assets/images/leaders/leader05.png'
 import IMG_LEADER06 from '../../assets/images/leaders/leader06.png'
@@ -47,16 +55,22 @@ import IMG_LEADER07 from '../../assets/images/leaders/leader07.png'
 import IMG_LEADER08 from '../../assets/images/leaders/leader08.png'
 import IMG_LEADER09 from '../../assets/images/leaders/leader09.png'
 
-const Landing = () => {
+import IMG_ABOUT_EFFECT from '../../assets/images/effects/about-effect.png'
+
+const Landing = ({ signinModalSet, showSigninModal }) => {
+    const handleLoginModal = () => {
+        if(!showSigninModal) {
+            signinModalSet(true)
+        }
+    }
+
     return (
-        <React.Fragment>
+        <Fragment>
             <div className='landing-section'>
                 <div className='game-platform'>
 
-                    <div className='effect-section'>
-                        <div className='effect-wallpaper01'>
-                            <img src={IMG_GAME_EFFECT01} alt='effect-wallpaper01' className='effect-wall-01' />
-                        </div>
+                    <div className='effect-wallpaper01'>
+                        <img src={IMG_GAME_EFFECT01} alt='effect-wallpaper01' className='effect-wall-01' />
                     </div>
 
                     <div className='game-logo-section'>
@@ -77,14 +91,12 @@ const Landing = () => {
                             </span>
                         </div>
                         <div className='row join-login-area'>
-                            <Button className='join-login-btn'>Login and Join</Button>
+                            <Button onClick={handleLoginModal} className='join-login-btn'>Login and Join</Button>
                         </div>
                     </div>
 
                     <div className='character-section'>
-                        <img src={IMG_CHARACTER02} alt='character02' className='character02-img' />
-                        <img src={IMG_CHARACTER01} alt='character01' className='character01-img' />
-                        <img src={IMG_CHARACTER03} alt='character03' className='character03-img' />
+                        <img src={IMG_CHARACTERS} alt='character01' className='character01-img' />
                     </div>
 
                 </div>
@@ -112,41 +124,8 @@ const Landing = () => {
                             </div>
                         </div>
                         <div className='match-cards'>
-                            <div className='match-card-section'>
-                                <MatchCard 
-                                    map_name={'de_dust2'} 
-                                    start_time={'11:00 AM'} 
-                                    apr_amount={'16'} 
-                                    is_staked={true} 
-                                    match_price={'$APR 2023'} 
-                                    comein_players={'12'} 
-                                    total_players={'18'} 
-                                    type={'2*2'}
-                                    fee={'50'}
-                                />
-                                <MatchCard 
-                                    map_name={'de_dust2'} 
-                                    start_time={'11:00 AM'} 
-                                    apr_amount={'16'} 
-                                    is_staked={true} 
-                                    match_price={'$APR 2023'} 
-                                    comein_players={'12'} 
-                                    total_players={'18'} 
-                                    type={'2*2'}
-                                    fee={'50'}
-                                />
-                                <MatchCard 
-                                    map_name={'de_dust2'} 
-                                    start_time={'11:00 AM'} 
-                                    apr_amount={'16'} 
-                                    is_staked={true} 
-                                    match_price={'$APR 2023'} 
-                                    comein_players={'12'} 
-                                    total_players={'18'} 
-                                    type={'2*2'}
-                                    fee={'50'}
-                                />
-                            </div>
+                            <img src={IMG_UPCOMING_EFFECT} alt='effect' className='upcoming-effect' /> 
+                            <img src={IMG_SHADOW_EFFECT} alt='shadow-img' className='shadow-effect-img' />
 
                             <div className='match-card-section'>
                                 <MatchCard 
@@ -184,8 +163,40 @@ const Landing = () => {
                                 />
                             </div>
 
-                            <div className='shadow-area'>
-                                <img src={IMG_SHADOW_EFFECT} alt='shadow-img' className='shadow-effect-img' />
+                            <div className='match-card-section'>
+                                <MatchCard 
+                                    map_name={'de_dust2'} 
+                                    start_time={'11:00 AM'} 
+                                    apr_amount={'16'} 
+                                    is_staked={true} 
+                                    match_price={'$APR 2023'} 
+                                    comein_players={'12'} 
+                                    total_players={'18'} 
+                                    type={'2*2'}
+                                    fee={'50'}
+                                />
+                                <MatchCard 
+                                    map_name={'de_dust2'} 
+                                    start_time={'11:00 AM'} 
+                                    apr_amount={'16'} 
+                                    is_staked={true} 
+                                    match_price={'$APR 2023'} 
+                                    comein_players={'12'} 
+                                    total_players={'18'} 
+                                    type={'2*2'}
+                                    fee={'50'}
+                                />
+                                <MatchCard 
+                                    map_name={'de_dust2'} 
+                                    start_time={'11:00 AM'} 
+                                    apr_amount={'16'} 
+                                    is_staked={true} 
+                                    match_price={'$APR 2023'} 
+                                    comein_players={'12'} 
+                                    total_players={'18'} 
+                                    type={'2*2'}
+                                    fee={'50'}
+                                />
                             </div>
 
                             <div className='match-card-action'>
@@ -197,6 +208,7 @@ const Landing = () => {
                 </div>
 
                 <div className='brand-ambassadors'>
+                    <img src={IMG_BRAND_EFFECT} alt='brand-effect' className='brand-effect' />
                     <div className='brand-title-section'>
                         <div className='brand-title-section'>
                             <span className='brand-title'><span className='spec-brand'>Brand</span>&nbsp;ambassadors</span>
@@ -255,6 +267,7 @@ const Landing = () => {
                                 <div className='socail-sub-texts-l'><span>Twitch subscribers</span></div>
                                 {/* <img src={IMG_EFFECT_YOUTUBE} alt='youtube-effect' className='eclipse-effect' /> */}
                             </div>
+                            <div className='match-card-line'></div>
                             <div className='twitch-texts'>
                                 <div className='socail-texts-r'>
                                     <img src={IMG_TWITCH_ICO} alt='twitch-img' />
@@ -268,6 +281,8 @@ const Landing = () => {
                 </div>
 
                 <div className='leader-board'>
+                    <img src={IMG_LEADER_EFFECT} className='leader-effect' />
+                    <img src={IMG_LEADER_SHADOW} className='leader-shadow' />
                     <div className='leader-board-title-section'>
                         <span className='leaderboard-title'>Leaderboard</span><br />
                         <span className='leaderboard-detail'>For most project participants, the Arcader platform is a good income. Play and earn money!</span>
@@ -355,6 +370,7 @@ const Landing = () => {
                 </div>
 
                 <div className='about-arcader'>
+                    <img src={IMG_ABOUT_EFFECT} className='about-effect' />
                     <div className='about-title-section'>
                         <span className='brand-title'>About <span className='spec-brand'>Arcader</span></span>
                     </div>
@@ -369,14 +385,17 @@ const Landing = () => {
                             <div className='status-value'>$ARD 2,023,351</div>
                             <div className='status-title'>Total earnings</div>
                         </div>
+                        <div className='match-card-line'></div>
                         <div className='sub-status'>
                             <div className='status-value'>128,658</div>
                             <div className='status-title'>Players</div>
                         </div>
+                        <div className='match-card-line'></div>
                         <div className='sub-status'>
                             <div className='status-value'>43,619</div>
                             <div className='status-title'>Games everyday</div>
                         </div>
+                        <div className='match-card-line'></div>
                         <div className='sub-status'>
                             <div className='status-value'>2,815</div>
                             <div className='status-title'>New players today</div>
@@ -384,8 +403,17 @@ const Landing = () => {
                     </div>
                 </div>
             </div>
-        </React.Fragment>
+        </Fragment>
     )
 }
 
-export default Landing
+Landing.propTypes = {
+    signinModalSet: PropTypes.func.isRequired,
+    showSigninModal: PropTypes.bool
+}
+
+const mapStateToProps = state => ({
+    showSigninModal: state.auth.showSigninModal
+})
+
+export default connect(mapStateToProps, { signinModalSet })(Landing)

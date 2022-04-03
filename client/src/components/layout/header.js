@@ -1,5 +1,10 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 import Button from 'react-bootstrap/Button'
+
+import { connect } from 'react-redux'
+import PropTypes from 'prop-types'
+
+import { signinModalSet } from '../../actions/auth'
 
 import IMG_LOGO from '../../assets/images/logo.png'
 import IMG_FLAG_EN from '../../assets/images/flags/flag-en.png'
@@ -9,9 +14,15 @@ import IMG_YT_ICO from '../../assets/images/icons/youtubu-ico.png'
 import IMG_MG_ICO from '../../assets/images/icons/msg-ico.png'
 import IMG_IG_ICO from '../../assets/images/icons/instagram-ico.png'
 
-const Header = () => {
+const Header = ({ signinModalSet, showSigninModal }) => {
+    const handleLoginModal = () => {
+        if(!showSigninModal) {
+            signinModalSet(true)
+        }
+    }
+
     return (
-        <React.Fragment>
+        <Fragment>
             <div className='header-section'>
                 <div className='logo-section'>
                     <img src={IMG_LOGO} alt='Arcader-Logo' className='arcader-logo-img' />
@@ -36,12 +47,21 @@ const Header = () => {
                         <a href='#'><img src={IMG_IG_ICO} className='social-media-btns' alt='Instagram' /></a>
                     </div>
                     <div>
-                        <Button className='btn-login'>Login</Button>
+                        <Button onClick={handleLoginModal} className='btn-login'>Login</Button>
                     </div>
                 </div>
             </div>
-        </React.Fragment>
+        </Fragment>
     )
 }
 
-export default Header
+Header.propTypes = {
+    signinModalSet: PropTypes.func.isRequired,
+    showSigninModal: PropTypes.bool
+}
+
+const mapStateToProps = state => ({
+    showSigninModal: state.auth.showSigninModal
+})
+
+export default connect(mapStateToProps, { signinModalSet })(Header)

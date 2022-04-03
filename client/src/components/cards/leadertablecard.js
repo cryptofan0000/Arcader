@@ -1,8 +1,8 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 
 const LeaderTaleCard = ({ranking, avatar, nickname, profitability, avg_bet, max_bet, earning}) => {
     return (
-        <React.Fragment>
+        <Fragment>
             <div className='leader-table-section'>
                 <div className='table-col-ranking'>
                     <span>#{ranking ? ranking : ''}</span>
@@ -32,7 +32,7 @@ const LeaderTaleCard = ({ranking, avatar, nickname, profitability, avg_bet, max_
                     </div>
                 </div>
             </div>
-        </React.Fragment>
+        </Fragment>
     )
 }
 

@@ -1,23 +1,23 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 import IMG_FLAG_EN from '../../assets/images/flags/flag-en.png'
 import IMG_FLAG_RU from '../../assets/images/flags/flag-ru.png'
 
 const GamerCard = ({country, gamer_name, gamer_intro, youtubu_count, twitch_count, avatar, game_ico1, game_ico2}) => {
     return (
-        <React.Fragment>
+        <Fragment>
             <div className='gamer-card-section'>
                 <div className='game-icon-area'>
                     {
                         game_ico1 ? 
                             <img src={game_ico1} alt='game-icon-01' className='game-icon-sets01' />
                             :
-                            <React.Fragment></React.Fragment>
+                            <Fragment></Fragment>
                     }
                     {
                         game_ico2 ? 
                             <img src={game_ico2} alt='game-icon-02' className='game-icon-sets02'/>
                             :
-                            <React.Fragment></React.Fragment>
+                            <Fragment></Fragment>
                     }
                 </div>
                 <div className='gamer_section'>
@@ -25,7 +25,7 @@ const GamerCard = ({country, gamer_name, gamer_intro, youtubu_count, twitch_coun
                         avatar ? 
                             <img src={avatar} alt='gamer-avatar' />
                             :
-                            <React.Fragment></React.Fragment>
+                            <Fragment></Fragment>
                     }
                 </div>
                 <div className='gamer-detail'>
@@ -47,13 +47,14 @@ const GamerCard = ({country, gamer_name, gamer_intro, youtubu_count, twitch_coun
                         <div className='visitors-count'>{youtubu_count ? youtubu_count : ''}</div>
                         <div className='youtubu-name'>Youtube</div>
                     </div>
+                    <div className='match-card-line'></div>
                     <div className='twitch-panel'>
                         <div className='visitors-count'>{twitch_count ? twitch_count : ''}</div>
                         <div className='youtubu-name'>Twitch</div>
                     </div>
                 </div>
             </div>
-        </React.Fragment>
+        </Fragment>
     )
 }
 

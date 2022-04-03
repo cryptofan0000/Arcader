@@ -1,30 +1,41 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 
 import Header from './header'
 import Footer from './footer'
 import Landing from './landing'
 
+import { connect } from 'react-redux'
+import PropTypes from 'prop-types'
+
 import '../../assets/css/layout.css'
 import '../../assets/css/card.css'
 
-const Layout = () => {
+const Layout = ({showSigninModal}) => {
     return (
-        <React.Fragment>
+        <Fragment>
 
-            <React.Fragment>
+            <Fragment>
                 <Header />
-            </React.Fragment>
+            </Fragment>
 
-            <React.Fragment>
+            <Fragment>
                 <Landing />
-            </React.Fragment>
+            </Fragment>
 
-            <React.Fragment>
+            <Fragment>
                 <Footer />
-            </React.Fragment>
-            
-        </React.Fragment>
+            </Fragment>
+
+        </Fragment>
     )
 }
 
-export default Layout
+Layout.propTypes = {
+    showSigninModal: PropTypes.bool
+}
+
+const mapStateToProps = state => ({
+    showSigninModal: state.auth.showSigninModal
+})
+
+export default connect(mapStateToProps)(Layout)

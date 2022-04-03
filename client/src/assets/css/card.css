@@ -39,6 +39,7 @@
 .match_price_value {
     color: #FED262;
     font-size: 20px;
+    font-weight: bold;
 }
 
 .match_card_staked_match {
@@ -64,6 +65,16 @@
 
 .detail_row {
     margin-top: 40px !important;
+    justify-content: space-around !important;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.match-card-line {
+    width: 1px;
+    height: 48px;
+    background-color: #252C46;
 }
 
 .detail-text-span {
@@ -72,6 +83,7 @@
 
 .detail-value-span {
     font-size: 20px;
+    font-weight: bold;
 }
 
 .card-bottom-row {
@@ -120,6 +132,11 @@
     border: solid 1px #171C2F;
     margin-left: 10px;
     margin-right: 10px;
+    margin-top: 20px;
+}
+
+.gamers-card-section .gamer-card-section:nth-child(odd) {
+    margin-top: 40px;
 }
 
 .game-icon-area {
@@ -170,7 +187,7 @@
 
 .gamer-socials {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .youtubu-panel, .twitch-panel {

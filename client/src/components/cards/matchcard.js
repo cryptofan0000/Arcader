@@ -1,10 +1,10 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 
 import IMG_MORE_ICO from '../../assets/images/icons/more-btn-ico.png'
 
 const Matchcard = ({map_name, start_time, apr_amount, is_staked, match_price, comein_players, total_players, type, fee}) => {
     return(
-        <React.Fragment>
+        <Fragment>
             <div className='match-card'>
                 <div className='cs-icon-area'></div>
                 <div className='row custom-row card-top-row'>
@@ -18,19 +18,21 @@ const Matchcard = ({map_name, start_time, apr_amount, is_staked, match_price, co
                         is_staked ? 
                         <span className='match_card_staked_match'>staked match</span>
                         :
-                        <React.Fragment></React.Fragment>
+                        <Fragment></Fragment>
                     }
                 </div>
-                <div className='row custom-row detail_row detail_row'>
-                    <div className='col-5'>
+                <div className='custom-row detail_row'>
+                    <div>
                         <div className='row custom-row'><span className='match_price_value'>{match_price ? match_price : ''}</span></div>
                         <div className='row custom-row'><span className='detail-text-span'>Match prize</span></div>
                     </div>
-                    <div className='col-4'>
+                    <div className='match-card-line'></div>
+                    <div>
                         <div className='row custom-row'><span className='detail-value-span'>{comein_players ? comein_players : ''}/{total_players ? total_players : ''}</span></div>
                         <div className='row custom-row'><span className='detail-text-span'>Players</span></div>
                     </div>
-                    <div className='col-3'>
+                    <div className='match-card-line'></div>
+                    <div>
                         <div className='row custom-row'><span className='detail-value-span'>{type ? type : ''}</span></div>
                         <div className='row custom-row'><span className='detail-text-span'>Type</span></div>
                     </div>
@@ -40,7 +42,7 @@ const Matchcard = ({map_name, start_time, apr_amount, is_staked, match_price, co
                     <div className='more-btn-section'><span className='match-more-btn'>More<img src={IMG_MORE_ICO} alt='more-ico' className='more-btn-ico' /></span></div>
                 </div>
             </div>
-        </React.Fragment>
+        </Fragment>
     )
 }
 

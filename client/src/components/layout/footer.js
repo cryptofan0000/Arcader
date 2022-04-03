@@ -1,8 +1,8 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 
 const Footer = () => {
     return (
-        <React.Fragment>
+        <Fragment>
             <div className='footer-section'>
                 <div className='copy-right'>© 2022 Arcader. All rights reserved.</div>
                 <div className='services'>
@@ -10,7 +10,7 @@ const Footer = () => {
                     <span className='services-text'>Privacy Policy</span>
                 </div>
             </div>
-        </React.Fragment>
+        </Fragment>
     )
 }
 

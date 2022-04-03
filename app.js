@@ -6,6 +6,8 @@ const path = require('path');
 app.use(cors())
 app.use(express.json())
 
+process.env.NODE_ENV = 'production'
+
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('client/build'));
 

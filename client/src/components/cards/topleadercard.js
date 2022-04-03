@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 
 import IMG_GOLD_CROWN from '../../assets/images/leaders/gold-crown.png'
 import IMG_SILVER_CROWN from '../../assets/images/leaders/silver-crown.png'
@@ -6,22 +6,22 @@ import IMG_BRONZE_CROWN from '../../assets/images/leaders/bronze-crown.png'
 
 const TopLeaderCard = ({ranking, avatar, nickname, ardamount}) => {
     return (
-        <React.Fragment>
+        <Fragment>
             <div className='top-leader-section'>
                 <div className='top-leader-avatar'>
                     {
                         ranking === '1' ?
-                            <React.Fragment>
+                            <Fragment>
                                 <img src={IMG_GOLD_CROWN} className='top-crown-img' />
-                            </React.Fragment>
+                            </Fragment>
                         : ranking === '2' ?
-                            <React.Fragment>
+                            <Fragment>
                                 <img src={IMG_SILVER_CROWN} className='top-crown-img' />
-                            </React.Fragment>
+                            </Fragment>
                         :
-                            <React.Fragment>
+                            <Fragment>
                                 <img src={IMG_BRONZE_CROWN} className='top-crown-img' />
-                            </React.Fragment>
+                            </Fragment>
                     }
                     <img src={avatar} alt='top-leader' />
                 </div>
@@ -32,7 +32,7 @@ const TopLeaderCard = ({ranking, avatar, nickname, ardamount}) => {
                     <div className='row leader-earning'>Earning</div>
                 </div>
             </div>
-        </React.Fragment>
+        </Fragment>
     )
 }
 

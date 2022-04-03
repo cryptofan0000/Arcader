@@ -82,6 +82,7 @@
     font-family: Roboto, sans-serif !important;
     font-size: 16px !important;
     border-color: #8462FF !important;
+    padding-top: 6px !important;
 }
 
 .landing-section {
@@ -131,24 +132,34 @@
 }
 
 .join-login-btn {
-    font-size: 16px;
+    font-size: 16px !important;
     background-color: #8462FF !important;
     border-color: #8462FF !important;
     border-radius: 12px !important;
     width: 340px !important;
     height: 52px !important;
     margin-top: 20px;
+    padding-top: 6px !important;
 }
 
 .effect-wallpaper01 {
-    position: absolute;
-    left: calc((100% - 998px) / 2);
-    top: 256px;
+    position: relative;
 }
 
 .effect-wall-01 {
-    width: 998px;
-    height: 576px;
+    width: 1909px;
+    height: 1153.52px;
+    position: absolute;
+    left: calc((100% - 1909px) / 2.45);
+}
+
+.upcoming-effect {
+    width: 1200px;
+    height: 788px;
+    position: absolute;
+    left: calc((100% - 1200px) / 2);
+    top: 0;
+    filter: drop-shadow(0 0 450px rgba(124, 70, 241, 1));
 }
 
 .effect-wallpaper03 {
@@ -170,7 +181,7 @@
 
 .character01-img {
     position: absolute;
-    left: calc((100% - 768px) / 2);
+    left: calc((100% - 1107px) * 0.53);
     top: 468px;
     z-index: 3;
 }
@@ -235,33 +246,31 @@
 
 .match-cards {
     margin-top: 124px;
+    position: relative;
 }
 
 .match-card-section {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 10px;
     margin-bottom: 20px;
 }
 
-.shadow-area {
-    width: 1178px;
-    height: 294px;
-    margin-top: -250px;
-    z-index: 4;
-    margin-left: 10px;
-}
-
 .shadow-effect-img {
-    width: 100%;
+    width: 1200px;
     height: auto;
+    z-index: 4;
+    position: absolute;
+    bottom: 50px;
+    left: calc((100% - 1200px) / 2);
 }
 
 .match-card-action {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
 }
 
 .seeall-btn {
@@ -270,11 +279,12 @@
     border-radius: 12px !important;
     background-color: #8462FF !important;
     border-color: #8462FF !important;
-    margin-top: -26px;
+    z-index: 100;
 }
 
 .brand-ambassadors {
     margin-top: 170px;
+    position: relative;
 }
 
 .brand-title-section {
@@ -319,6 +329,9 @@
     background-color: #04060A;
     border-radius: 12px;
     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .eclipse-effect {
@@ -328,13 +341,15 @@
 }
 
 .youtube-texts {
-    width: 50%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .twitch-texts {
-    width: 50%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .youtube-counts-text {
@@ -345,18 +360,12 @@
 
 .socail-texts-l {
     display: flex;
-    justify-content: right;
-    margin-right: 150px;
     align-items: center;
-    margin-top: 20px;
 }
 
 .socail-texts-r {
     display: flex;
-    justify-content: left;
-    margin-left: 150px;
     align-items: center;
-    margin-top: 20px;
 }
 
 .social-icons {
@@ -368,8 +377,6 @@
 }
 
 .socail-sub-texts-l {
-    text-align: right;
-    padding-right: 200px;
     margin-top: 10px;
 }
 
@@ -378,13 +385,12 @@
 }
 
 .socail-sub-texts-r {
-    text-align: left;
-    padding-left: 200px;
     margin-top: 10px;
 }
 
 .leader-board {
     margin-top: 10px;
+    position: relative;
 }
 
 .leader-board-title-section {
@@ -428,6 +434,7 @@
     position: absolute;
     right: -150px;
     bottom: 35px;
+    z-index: 100;
 }
 
 .bronze-crown-effect {
@@ -447,10 +454,12 @@
 
 .leaders-table-section div:nth-child(5) {
     transform: rotate(0.3deg);
+    margin-left: 10px;
 }
 
 .leaders-table-section div:nth-child(6) {
-    transform: rotate(0.9deg);
+    transform: rotate(0.5deg);
+    margin-left: 10px;
 }
 
 .about-arcader {
@@ -478,6 +487,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin-top: 80px;
 }
 
 .sub-status {
@@ -485,7 +495,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 80px;
 }
 
 .status-value {
@@ -518,4 +527,34 @@
     color: #3D475F;
     font-size: 12px;
     margin-left: 50px;
+}
+
+.brand-effect {
+    position: absolute;
+    width: 1305px;
+    height: auto;
+    left: calc((100% - 1305px) / 2);
+    z-index: -1;
+    top: -50px;
+}
+
+.leader-effect {
+    position: absolute;
+    width: 1200px;
+    height: auto;
+    left: calc((100% - 1200px) / 2);
+    top: 50px;
+}
+
+.leader-shadow {
+    position: absolute;
+    width: 1379px;
+    height: 294px;
+    left: calc((100% - 1379px) / 2);
+    bottom: -20px;
+    z-index: 100;
+}
+
+.about-effect {
+    position: absolute;
 }
