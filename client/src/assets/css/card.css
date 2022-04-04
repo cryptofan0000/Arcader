@@ -1,7 +1,7 @@
 .match-card {
     width: 379px;
     height: 339px;
-    background-image: url('../images/games/match-card-bg.png');
+    background-image: url('../images/games/match-card-bg-min.png');
     background-repeat: no-repeat;
     background-color: #171928;
     border-radius: 12px;
@@ -9,7 +9,7 @@
 }
 
 .cs-icon-area {
-    background-image: url('../images/icons/cs-icon.png');
+    background-image: url('../images/icons/cs-icon.svg');
     width: 32px;
     height: 32px;
     position: absolute;

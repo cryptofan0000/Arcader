@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react'
 
-import IMG_MORE_ICO from '../../assets/images/icons/more-btn-ico.png'
+import IMG_MORE_ICO from '../../assets/images/icons/more-btn-ico.svg'
 
 const Matchcard = ({map_name, start_time, apr_amount, is_staked, match_price, comein_players, total_players, type, fee}) => {
     return(

@@ -16,9 +16,9 @@ import IMG_INPUT_USER from '../../assets/images/icons/user-input.svg'
 import IMG_INPUT_PASS from '../../assets/images/icons/pass-input.svg'
 import IMG_INPUT_BIRTH from '../../assets/images/icons/birth-input.svg'
 
-import IMG_LOGIN_STEAM from '../../assets/images/icons/fa-steam-ico.png'
-import IMG_LOGIN_BATTLE from '../../assets/images/icons/fa-battle-ico.png'
-import IMG_LOGIN_FORTNITE from '../../assets/images/icons/fa-fortnite-ico.png'
+import IMG_LOGIN_STEAM from '../../assets/images/icons/fa-steam-ico.svg'
+import IMG_LOGIN_BATTLE from '../../assets/images/icons/fa-battle-ico.svg'
+import IMG_LOGIN_FORTNITE from '../../assets/images/icons/fa-fortnite-ico.svg'
 
 const Signup = ({ signinModalSet, signupModalSet, showSignupModal}) => {
     const [username, setUsername] = useState('')

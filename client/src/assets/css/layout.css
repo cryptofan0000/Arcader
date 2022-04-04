@@ -142,16 +142,25 @@
     padding-top: 6px !important;
 }
 
-.effect-wallpaper01 {
+.game-platform-section {
     position: relative;
 }
 
-.effect-wall-01 {
+.main-effect {
+    width: 1909px;
+    height: 1153.52px;
+    position: absolute;
+    top: -50px;
+    left: calc((100% - 1909px) / 2 + 170.5px);
+    background-image: url('../images/effects/main-effect.png');
+}
+
+/* .effect-wall-01 {
     width: 1909px;
     height: 1153.52px;
     position: absolute;
     left: calc((100% - 1909px) / 2.45);
-}
+} */
 
 .upcoming-effect {
     width: 1200px;
@@ -179,11 +188,23 @@
     left: calc((100% - 768px) / 2 - 140px);
 }
 
-.character01-img {
+/* .character01-img {
     position: absolute;
     left: calc((100% - 1107px) * 0.53);
     top: 468px;
     z-index: 3;
+} */
+
+.character-section {
+    /* position: absolute; */
+    left: calc((100% - 1107px) * 0.53);
+    top: 468px;
+    z-index: 3;
+    background-image: url('../images/characters/group01-min.png');
+    width: 1107px;
+    height: 768px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .character03-img {
@@ -193,7 +214,6 @@
 }
 
 .upcoming-games {
-    margin-top: 1125px;
     text-align: center;
     width: 1200px;
     margin-left: calc((100% - 1200px) / 2);
@@ -233,15 +253,15 @@
 }
 
 .cs-game-section-card {
-    background-image: url('../images/games/cs-section-bg.png');
+    background-image: url('../images/games/cs-section-bg-min.png');
 }
 
 .co-game-section-card {
-    background-image: url('../images/games/co-section-bg.png');
+    background-image: url('../images/games/co-section-bg-min.png');
 }
 
 .ft-game-section-card {
-    background-image: url('../images/games/ft-section-bg.png');
+    background-image: url('../images/games/ft-section-bg-min.png');
 }
 
 .match-cards {
@@ -427,7 +447,7 @@
 }
 
 .gold-crown-effect {
-    background-image: url('../images/leaders/gold-crown-lg.png');
+    background-image: url('../images/leaders/gold-crown-lg.svg');
     background-repeat: no-repeat;
     width: 279px;
     height: 242px;
@@ -438,7 +458,7 @@
 }
 
 .bronze-crown-effect {
-    background-image: url('../images/leaders/bronze-crown-md.png');
+    background-image: url('../images/leaders/bronze-crown-md.svg');
     background-repeat: no-repeat;
     width: 106px;
     height: 94px;
@@ -539,14 +559,27 @@
 }
 
 .leader-effect {
+    background-image: url(../images/effects/leader-effect.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 1200px;
+    height: 900px;
+    left: calc((100% - 1200px) / 2);
+    top: 50px;
+}
+/* .leader-effect {
     position: absolute;
     width: 1200px;
     height: auto;
     left: calc((100% - 1200px) / 2);
     top: 50px;
-}
+} */
 
 .leader-shadow {
+    background-image: url(../images/effects/leader-shadow.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
     position: absolute;
     width: 1379px;
     height: 294px;
@@ -555,6 +588,20 @@
     z-index: 100;
 }
 
-.about-effect {
+/* .leader-shadow {
     position: absolute;
+    width: 1379px;
+    height: 294px;
+    left: calc((100% - 1379px) / 2);
+    bottom: -20px;
+    z-index: 100;
+} */
+
+.about-effect {
+    background-image: url(../images/effects/about-effect.png);
+    position: absolute;
+    width: 1589px;
+    height: 795px;
+    background-size: cover;
+    background-repeat: no-repeat
 }

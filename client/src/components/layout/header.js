@@ -7,12 +7,12 @@ import PropTypes from 'prop-types'
 import { signinModalSet } from '../../actions/auth'
 
 import IMG_LOGO from '../../assets/images/logo.png'
-import IMG_FLAG_EN from '../../assets/images/flags/flag-en.png'
+import IMG_FLAG_EN from '../../assets/images/flags/flag-en.svg'
 import IMG_TOKEN from '../../assets/images/tokens/arcader-token-sm.png'
-import IMG_TG_ICO from '../../assets/images/icons/telegram-ico.png'
-import IMG_YT_ICO from '../../assets/images/icons/youtubu-ico.png'
-import IMG_MG_ICO from '../../assets/images/icons/msg-ico.png'
-import IMG_IG_ICO from '../../assets/images/icons/instagram-ico.png'
+import IMG_TG_ICO from '../../assets/images/icons/telegram-ico.svg'
+import IMG_YT_ICO from '../../assets/images/icons/youtube-ico.svg'
+import IMG_MG_ICO from '../../assets/images/icons/msg-ico.svg'
+import IMG_IG_ICO from '../../assets/images/icons/instagram-ico.svg'
 
 const Header = ({ signinModalSet, showSigninModal }) => {
     const handleLoginModal = () => {

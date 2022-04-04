@@ -1,8 +1,8 @@
 import React, {Fragment} from 'react'
 
-import IMG_GOLD_CROWN from '../../assets/images/leaders/gold-crown.png'
-import IMG_SILVER_CROWN from '../../assets/images/leaders/silver-crown.png'
-import IMG_BRONZE_CROWN from '../../assets/images/leaders/bronze-crown.png'
+import IMG_GOLD_CROWN from '../../assets/images/leaders/gold-crown.svg'
+import IMG_SILVER_CROWN from '../../assets/images/leaders/silver-crown.svg'
+import IMG_BRONZE_CROWN from '../../assets/images/leaders/bronze-crown.svg'
 
 const TopLeaderCard = ({ranking, avatar, nickname, ardamount}) => {
     return (

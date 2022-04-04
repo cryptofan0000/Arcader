@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react'
-import IMG_FLAG_EN from '../../assets/images/flags/flag-en.png'
-import IMG_FLAG_RU from '../../assets/images/flags/flag-ru.png'
+import IMG_FLAG_EN from '../../assets/images/flags/flag-en.svg'
+import IMG_FLAG_RU from '../../assets/images/flags/flag-ru.svg'
 
 const GamerCard = ({country, gamer_name, gamer_intro, youtubu_count, twitch_count, avatar, game_ico1, game_ico2}) => {
     return (

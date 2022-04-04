@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react'
-import IMG_METAMASK_ICO from '../../assets/images/icons/metamask-ico.png'
+import IMG_METAMASK_ICO from '../../assets/images/icons/metamask-ico.svg'
 
 const MetamaskButton = () => {
     return (

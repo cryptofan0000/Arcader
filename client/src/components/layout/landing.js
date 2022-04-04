@@ -12,50 +12,39 @@ import TopLeaderCard from '../cards/topleadercard'
 import LeaderTaleCard from '../cards/leadertablecard'
 
 import IMG_GAME_LOGO from '../../assets/images/tokens/arcader-token-lg.png'
-import IMG_GAME_EFFECT01 from '../../assets/images/effects/main-effect.png'
 
-import IMG_CHARACTERS from '../../assets/images/characters/group01.png'
-
-import IMG_CS_GAME_LOGO from '../../assets/images/games/cs-section-title.png'
-import IMG_CO_GAME_LOGO from '../../assets/images/games/co-section-title.png'
-import IMG_FT_GAME_LOGO from '../../assets/images/games/ft-section-title.png'
+import IMG_CS_GAME_LOGO from '../../assets/images/games/cs-section-title-min.png'
+import IMG_CO_GAME_LOGO from '../../assets/images/games/co-section-title-min.png'
+import IMG_FT_GAME_LOGO from '../../assets/images/games/ft-section-title-min.png'
 
 import IMG_UPCOMING_EFFECT from '../../assets/images/effects/upcoming-effect.png'
 
 import IMG_SHADOW_EFFECT from '../../assets/images/effects/shadow.png'
 
-import IMG_ICO_CS from '../../assets/images/icons/cs-icon.png'
-import IMG_ICO_FG from '../../assets/images/icons/fgame-ico.png'
-import IMG_ICO_DG from '../../assets/images/icons/dgame-ico.png'
+import IMG_ICO_CS from '../../assets/images/icons/cs-icon.svg'
+import IMG_ICO_FG from '../../assets/images/icons/fgame-ico.svg'
+import IMG_ICO_DG from '../../assets/images/icons/dgame-ico.svg'
 
-import IMG_AVA_USER01 from '../../assets/images/gamers/gamer01.png'
-import IMG_AVA_USER02 from '../../assets/images/gamers/gamer02.png'
-import IMG_AVA_USER03 from '../../assets/images/gamers/gamer03.png'
-import IMG_AVA_USER04 from '../../assets/images/gamers/gamer04.png'
+import IMG_AVA_USER01 from '../../assets/images/gamers/gamer01-min.png'
+import IMG_AVA_USER02 from '../../assets/images/gamers/gamer02-min.png'
+import IMG_AVA_USER03 from '../../assets/images/gamers/gamer03-min.png'
+import IMG_AVA_USER04 from '../../assets/images/gamers/gamer04-min.png'
 
 import IMG_BRAND_EFFECT from '../../assets/images/effects/brand-effect.png'
 
-// import IMG_EFFECT_YOUTUBE from '../../assets/images/effects/ellipse-red.png'
-// import IMG_EFFECT_TWITCH from '../../assets/images/effects/ellipse-blue.png'
+import IMG_YOUTUBE_ICO from '../../assets/images/icons/youtubu.svg'
+import IMG_TWITCH_ICO from '../../assets/images/icons/twitch.svg'
 
-import IMG_YOUTUBE_ICO from '../../assets/images/icons/youtubu.png'
-import IMG_TWITCH_ICO from '../../assets/images/icons/twitch.png'
+import IMG_GOLD_LEADER from '../../assets/images/leaders/gold-leader-min.png'
+import IMG_SILVER_LEADER from '../../assets/images/leaders/silver-leader-min.png'
+import IMG_BRONZE_LEADER from '../../assets/images/leaders/bronze-leader-min.png'
 
-import IMG_GOLD_LEADER from '../../assets/images/leaders/gold-leader.png'
-import IMG_SILVER_LEADER from '../../assets/images/leaders/silver-leader.png'
-import IMG_BRONZE_LEADER from '../../assets/images/leaders/bronze-leader.png'
-
-import IMG_LEADER_EFFECT from '../../assets/images/effects/leader-effect.png'
-import IMG_LEADER_SHADOW from '../../assets/images/effects/leader-shadow.png'
-
-import IMG_LEADER04 from '../../assets/images/leaders/leader04.png'
-import IMG_LEADER05 from '../../assets/images/leaders/leader05.png'
-import IMG_LEADER06 from '../../assets/images/leaders/leader06.png'
-import IMG_LEADER07 from '../../assets/images/leaders/leader07.png'
-import IMG_LEADER08 from '../../assets/images/leaders/leader08.png'
-import IMG_LEADER09 from '../../assets/images/leaders/leader09.png'
-
-import IMG_ABOUT_EFFECT from '../../assets/images/effects/about-effect.png'
+import IMG_LEADER04 from '../../assets/images/leaders/leader04-min.png'
+import IMG_LEADER05 from '../../assets/images/leaders/leader05-min.png'
+import IMG_LEADER06 from '../../assets/images/leaders/leader06-min.png'
+import IMG_LEADER07 from '../../assets/images/leaders/leader07-min.png'
+import IMG_LEADER08 from '../../assets/images/leaders/leader08-min.png'
+import IMG_LEADER09 from '../../assets/images/leaders/leader09-min.png'
 
 const Landing = ({ signinModalSet, showSigninModal }) => {
     const handleLoginModal = () => {
@@ -67,38 +56,34 @@ const Landing = ({ signinModalSet, showSigninModal }) => {
     return (
         <Fragment>
             <div className='landing-section'>
-                <div className='game-platform'>
+                <div className='game-platform-section'>
 
-                    <div className='effect-wallpaper01'>
-                        <img src={IMG_GAME_EFFECT01} alt='effect-wallpaper01' className='effect-wall-01' />
-                    </div>
-
-                    <div className='game-logo-section'>
-                        <img src={IMG_GAME_LOGO} alt='Game-Logo' className='game-logo-img' />
-                    </div>
-
-                    <div className='game-intro-section'>
-                        <div className='row'>
-                            <span className='game-main-intro-span'>
-                                <span className='game-name-span'>Arcader&nbsp;</span>
-                                - game platform
-                            </span>
+                    <div className='main-effect'></div>
+                    <div className='game-platform'>
+                        <div className='game-logo-section'>
+                            <img src={IMG_GAME_LOGO} alt='Game-Logo' className='game-logo-img' />
                         </div>
-                        <div className='row'>
-                            <span className='game-password-info'>
-                                Create password with at least 6 characters. Only lattin letters, numbers<br/>
-                                and general punctuation symbals are allowed. Let it be complex and original.
-                            </span>
-                        </div>
-                        <div className='row join-login-area'>
-                            <Button onClick={handleLoginModal} className='join-login-btn'>Login and Join</Button>
-                        </div>
-                    </div>
 
-                    <div className='character-section'>
-                        <img src={IMG_CHARACTERS} alt='character01' className='character01-img' />
-                    </div>
+                        <div className='game-intro-section'>
+                            <div className='row'>
+                                <span className='game-main-intro-span'>
+                                    <span className='game-name-span'>Arcader&nbsp;</span>
+                                    - game platform
+                                </span>
+                            </div>
+                            <div className='row'>
+                                <span className='game-password-info'>
+                                    Create password with at least 6 characters. Only lattin letters, numbers<br/>
+                                    and general punctuation symbals are allowed. Let it be complex and original.
+                                </span>
+                            </div>
+                            <div className='row join-login-area'>
+                                <Button onClick={handleLoginModal} className='join-login-btn'>Login and Join</Button>
+                            </div>
+                        </div>
 
+                        <div className='character-section'></div>
+                    </div>
                 </div>
 
                 <div className='upcoming-games'>
@@ -265,7 +250,6 @@ const Landing = ({ signinModalSet, showSigninModal }) => {
                                     <span className='youtube-counts-text'>15,300,000</span>
                                 </div>
                                 <div className='socail-sub-texts-l'><span>Twitch subscribers</span></div>
-                                {/* <img src={IMG_EFFECT_YOUTUBE} alt='youtube-effect' className='eclipse-effect' /> */}
                             </div>
                             <div className='match-card-line'></div>
                             <div className='twitch-texts'>
@@ -274,15 +258,14 @@ const Landing = ({ signinModalSet, showSigninModal }) => {
                                     <span className='youtube-counts-text'>7,800,000</span>
                                 </div>
                                 <div className='socail-sub-texts-r'><span>Twitch subscribers</span></div>
-                                {/* <img src={IMG_EFFECT_TWITCH} alt='twich-effect' className='eclipse-effect' /> */}
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div className='leader-board'>
-                    <img src={IMG_LEADER_EFFECT} className='leader-effect' />
-                    <img src={IMG_LEADER_SHADOW} className='leader-shadow' />
+                    <div className='leader-effect'></div>
+                    <div className='leader-shadow'></div>
                     <div className='leader-board-title-section'>
                         <span className='leaderboard-title'>Leaderboard</span><br />
                         <span className='leaderboard-detail'>For most project participants, the Arcader platform is a good income. Play and earn money!</span>
@@ -370,7 +353,7 @@ const Landing = ({ signinModalSet, showSigninModal }) => {
                 </div>
 
                 <div className='about-arcader'>
-                    <img src={IMG_ABOUT_EFFECT} className='about-effect' />
+                    <div className='about-effect'></div>
                     <div className='about-title-section'>
                         <span className='brand-title'>About <span className='spec-brand'>Arcader</span></span>
                     </div>

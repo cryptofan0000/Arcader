@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react'
-import IMG_WALLET_ICO from '../../assets/images/icons/wallet-ico.png'
+import IMG_WALLET_ICO from '../../assets/images/icons/wallet-ico.svg'
 
 const WalletButton = () => {
     return (
