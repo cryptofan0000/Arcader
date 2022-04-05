@@ -17,10 +17,6 @@ import IMG_CS_GAME_LOGO from '../../assets/images/games/cs-section-title-min.png
 import IMG_CO_GAME_LOGO from '../../assets/images/games/co-section-title-min.png'
 import IMG_FT_GAME_LOGO from '../../assets/images/games/ft-section-title-min.png'
 
-import IMG_UPCOMING_EFFECT from '../../assets/images/effects/upcoming-effect.png'
-
-import IMG_SHADOW_EFFECT from '../../assets/images/effects/shadow.png'
-
 import IMG_ICO_CS from '../../assets/images/icons/cs-icon.svg'
 import IMG_ICO_FG from '../../assets/images/icons/fgame-ico.svg'
 import IMG_ICO_DG from '../../assets/images/icons/dgame-ico.svg'
@@ -73,7 +69,7 @@ const Landing = ({ signinModalSet, showSigninModal }) => {
                             </div>
                             <div className='row'>
                                 <span className='game-password-info'>
-                                    Create password with at least 6 characters. Only lattin letters, numbers<br/>
+                                    Create password with at least 6 characters. Only lattin letters, numbers
                                     and general punctuation symbals are allowed. Let it be complex and original.
                                 </span>
                             </div>
@@ -109,8 +105,8 @@ const Landing = ({ signinModalSet, showSigninModal }) => {
                             </div>
                         </div>
                         <div className='match-cards'>
-                            <img src={IMG_UPCOMING_EFFECT} alt='effect' className='upcoming-effect' /> 
-                            <img src={IMG_SHADOW_EFFECT} alt='shadow-img' className='shadow-effect-img' />
+                            <div className='upcoming-effect'></div>
+                            <div className='shadow-effect-img'></div>
 
                             <div className='match-card-section'>
                                 <MatchCard 
@@ -199,8 +195,7 @@ const Landing = ({ signinModalSet, showSigninModal }) => {
                             <span className='brand-title'><span className='spec-brand'>Brand</span>&nbsp;ambassadors</span>
                         </div>
                         <div className='brand-detail-section'>
-                            <span className='brand-detail'>Many popular bloggers and players have already left their opinion about Arcader.<br /> 
-                            Join us, become one of them and tell us about us!</span>
+                            <span className='brand-detail'>Many popular bloggers and players have already left their opinion about Arcader. Join us, become one of them and tell us about us!</span>
                         </div>
                     </div>
                     <div className='gamers-card-section'>
@@ -246,15 +241,15 @@ const Landing = ({ signinModalSet, showSigninModal }) => {
                         <div className='social-section-bg'>
                             <div className='youtube-texts'>
                                 <div className='socail-texts-l'>
-                                    <img src={IMG_YOUTUBE_ICO} alt='youtube-img' />
+                                    <img src={IMG_YOUTUBE_ICO} alt='youtube-img' className='socail-section-icon' />
                                     <span className='youtube-counts-text'>15,300,000</span>
                                 </div>
-                                <div className='socail-sub-texts-l'><span>Twitch subscribers</span></div>
+                                <div className='socail-sub-texts-l'><span>Youtube subscribers</span></div>
                             </div>
                             <div className='match-card-line'></div>
                             <div className='twitch-texts'>
                                 <div className='socail-texts-r'>
-                                    <img src={IMG_TWITCH_ICO} alt='twitch-img' />
+                                    <img src={IMG_TWITCH_ICO} alt='twitch-img' className='socail-section-icon' />
                                     <span className='youtube-counts-text'>7,800,000</span>
                                 </div>
                                 <div className='socail-sub-texts-r'><span>Twitch subscribers</span></div>
@@ -267,7 +262,7 @@ const Landing = ({ signinModalSet, showSigninModal }) => {
                     <div className='leader-effect'></div>
                     <div className='leader-shadow'></div>
                     <div className='leader-board-title-section'>
-                        <span className='leaderboard-title'>Leaderboard</span><br />
+                        <span className='leaderboard-title'>Leaderboard</span>
                         <span className='leaderboard-detail'>For most project participants, the Arcader platform is a good income. Play and earn money!</span>
                     </div>
 

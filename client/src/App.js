@@ -11,6 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/fonts/index.css'
 import './index.css'
 import './assets/css/bootstrap-custom.css'
+import './assets/css/responsive.css'
 
 function App() {
   return (

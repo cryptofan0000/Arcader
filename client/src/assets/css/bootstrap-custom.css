@@ -96,7 +96,7 @@
     padding: 0px !important;
 }
 
-::-webkit-scrollbar {
+body::-webkit-scrollbar {
     width: 0px;
 }
 
