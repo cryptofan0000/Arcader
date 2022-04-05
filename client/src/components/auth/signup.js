@@ -8,7 +8,7 @@ import { signinModalSet, signupModalSet } from '../../actions/auth'
 import AuthInput from '../inputs/authinput'
 import AuthDate from '../inputs/authdate'
 import AuthRegion from '../inputs/authregion'
-import VerifyCode from '../inputs/verifycode'
+import VerifyCodes from './verifycodes'
 import MetamaskButton from '../inputs/metamask'
 import WalletButton from '../inputs/wallet'
 
@@ -157,38 +157,7 @@ const Signup = ({ signinModalSet, signupModalSet, showSignupModal}) => {
                                     <div className='verify-sentence'>
                                         We have sent a confirmation code to your email. <br />Enter a 6-digit code in the field below
                                     </div>
-                                    <div className='verify-codes'>
-                                        <VerifyCode 
-                                            value={verifycode}
-                                            setValue={handleVerifyCode}
-                                            index={0}
-                                        />
-                                        <VerifyCode 
-                                            value={verifycode}
-                                            setValue={handleVerifyCode}
-                                            index={1}
-                                        />
-                                        <VerifyCode 
-                                            value={verifycode}
-                                            setValue={handleVerifyCode}
-                                            index={2}
-                                        />
-                                        <VerifyCode 
-                                            value={verifycode}
-                                            setValue={handleVerifyCode}
-                                            index={3}
-                                        />
-                                        <VerifyCode 
-                                            value={verifycode}
-                                            setValue={handleVerifyCode}
-                                            index={4}
-                                        />
-                                        <VerifyCode 
-                                            value={verifycode}
-                                            setValue={handleVerifyCode}
-                                            index={5}
-                                        />
-                                    </div>
+                                    <VerifyCodes />
                                     <div className='login-btns' onClick={handleVerify}>
                                         <span>Next step</span>
                                     </div>

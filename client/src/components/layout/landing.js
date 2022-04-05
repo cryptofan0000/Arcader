@@ -359,24 +359,28 @@ const Landing = ({ signinModalSet, showSigninModal }) => {
                     </div>
 
                     <div className='about-status'>
-                        <div className='sub-status'>
-                            <div className='status-value'>$ARD 2,023,351</div>
-                            <div className='status-title'>Total earnings</div>
+                        <div className='about-total-section'>
+                            <div className='sub-status'>
+                                <div className='status-value'>$ARD 2,023,351</div>
+                                <div className='status-title'>Total earnings</div>
+                            </div>
                         </div>
-                        <div className='match-card-line'></div>
-                        <div className='sub-status'>
-                            <div className='status-value'>128,658</div>
-                            <div className='status-title'>Players</div>
-                        </div>
-                        <div className='match-card-line'></div>
-                        <div className='sub-status'>
-                            <div className='status-value'>43,619</div>
-                            <div className='status-title'>Games everyday</div>
-                        </div>
-                        <div className='match-card-line'></div>
-                        <div className='sub-status'>
-                            <div className='status-value'>2,815</div>
-                            <div className='status-title'>New players today</div>
+                        <div className='detail-about-section'>
+                            <div className='match-card-line'></div>
+                            <div className='sub-status'>
+                                <div className='status-value'>128,658</div>
+                                <div className='status-title'>Players</div>
+                            </div>
+                            <div className='match-card-line'></div>
+                            <div className='sub-status'>
+                                <div className='status-value'>43,619</div>
+                                <div className='status-title'>Games everyday</div>
+                            </div>
+                            <div className='match-card-line'></div>
+                            <div className='sub-status'>
+                                <div className='status-value'>2,815</div>
+                                <div className='status-title'>New players today</div>
+                            </div>
                         </div>
                     </div>
                 </div>

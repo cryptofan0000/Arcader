@@ -251,6 +251,10 @@ PC Responsive
         margin-left: 12px;
     }
 
+    .leader-table-section  {
+        height: 54px;
+    }
+
     .leaders-table-section div:nth-child(5) {
         margin-left: 22px;
     }
@@ -262,6 +266,7 @@ PC Responsive
     .about-effect {
         width: calc(100% - 24px);
         margin-left: 12px;
+        margin-top: 120px;
     }
 
     .leader-effect {
@@ -274,6 +279,7 @@ PC Responsive
 
     .sub-col-title {
         font-size: 12px;
+        margin-top: 8px;
     }
 
     .leader-nickname-sub {
@@ -391,5 +397,50 @@ PC Responsive
         font-size: 14px;
         width: 350px;
         margin-left: calc((100% - 350px) / 2);
+    }
+
+    .gold-crown-effect {
+        width: 140px;
+        height: 88.29px;
+        right: -50px;
+        bottom: 20px;
+        background-size: contain;
+    }
+
+    .bronze-crown-effect {
+        width: 64px;
+        height: 40px;
+        background-size: contain;
+        left: -10px;
+        top: 50px;
+    }
+
+    .table-col-detail div.sub-col-detail:nth-child(2), .table-col-detail div.sub-col-detail:nth-child(3) {
+        display: none;
+    }
+
+    .leader-avatar {
+        width: 24px;
+        height: 24px;
+    }
+
+    .about-status {
+        flex-direction: column;
+    }
+
+    .about-status > div.about-total-section {
+        order: 2;
+    }
+
+    .about-status div.detail-about-section {
+        order: 1;
+    }
+
+    .detail-about-section > div.match-card-line {
+        display: none !important;
+    }
+
+    .about-status {
+        margin-top: 40px;
     }
 }

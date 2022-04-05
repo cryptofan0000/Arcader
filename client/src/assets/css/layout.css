@@ -545,7 +545,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 80px;
 }
 
@@ -554,6 +554,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .status-value {
@@ -639,8 +641,15 @@
 .about-effect {
     background-image: url(../images/effects/about-effect.png);
     position: absolute;
-    width: calc(100% - 24px);
-    height: 795px;
+    background-repeat: no-repeat;
+    width: 1598px;
+    height: 755px;
     background-size: cover;
-    background-repeat: no-repeat
+    margin-top: 50px;
+}
+
+.detail-about-section {
+    display: flex;
+    margin-left: 10px;
+    justify-content: space-evenly;
 }
