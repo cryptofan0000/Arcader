@@ -42,6 +42,8 @@ import IMG_LEADER07 from '../../assets/images/leaders/leader07-min.png'
 import IMG_LEADER08 from '../../assets/images/leaders/leader08-min.png'
 import IMG_LEADER09 from '../../assets/images/leaders/leader09-min.png'
 
+import IMG_SEMI_CIRCLE from '../../assets/images/effects/semicircle.png'
+
 const Landing = ({ signinModalSet, showSigninModal }) => {
     const handleLoginModal = () => {
         if(!showSigninModal) {
@@ -79,12 +81,15 @@ const Landing = ({ signinModalSet, showSigninModal }) => {
                         </div>
 
                         <div className='character-section'></div>
+                        <div className='semi-circle'>
+                            <img src={IMG_SEMI_CIRCLE} />
+                        </div>
                     </div>
                 </div>
 
                 <div className='upcoming-games'>
                     <div className='row'>
-                        <span className='upcoming-title-span'>Upcoming&nbsp;<span className='upcoming-spec'>Games</span></span>
+                        <span className='upcoming-title-span'>Live&nbsp;<span className='upcoming-spec'>Games</span></span>
                     </div>
                     <div className='row'>
                         <span className='upcoming-detail-span'>Choose a game right now. Participate in battles or place bets online.</span>

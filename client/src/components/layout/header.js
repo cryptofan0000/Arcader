@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 
-import { signinModalSet } from '../../actions/auth'
+import { signinModalSet, mobileMenuSet } from '../../actions/auth'
 
 import IMG_LOGO from '../../assets/images/logo.png'
 import IMG_FLAG_EN from '../../assets/images/flags/flag-en.svg'
@@ -16,17 +16,24 @@ import IMG_IG_ICO from '../../assets/images/icons/instagram-ico.svg'
 
 import IMG_MENU_ICO from '../../assets/images/icons/mobile-menu-ico.svg'
 
-const Header = ({ signinModalSet, showSigninModal }) => {
+const Header = ({ signinModalSet, mobileMenuSet, showSigninModal, showMobileMenu }) => {
     const handleLoginModal = () => {
         if(!showSigninModal) {
             signinModalSet(true)
         }
     }
 
+    const handleMobileMenu =() => {
+        if(!showMobileMenu) {
+            mobileMenuSet(true)
+            document.body.classList.add('no-scroll')
+        }
+    }
+
     return (
         <Fragment>
             <div className='header'>
-                <div className='mobile-menu'>
+                <div className='mobile-menu' onClick={handleMobileMenu}>
                     <img src={IMG_MENU_ICO} alt='mobile-icon' className='mobile-menu-ico' />
                 </div>
 
@@ -67,11 +74,14 @@ const Header = ({ signinModalSet, showSigninModal }) => {
 
 Header.propTypes = {
     signinModalSet: PropTypes.func.isRequired,
-    showSigninModal: PropTypes.bool
+    mobileMenuSet: PropTypes.func.isRequired,
+    showSigninModal: PropTypes.bool,
+    showMobileMenu: PropTypes.bool
 }
 
 const mapStateToProps = state => ({
-    showSigninModal: state.auth.showSigninModal
+    showSigninModal: state.auth.showSigninModal,
+    showMobileMenu: state.auth.showMobileMenu
 })
 
-export default connect(mapStateToProps, { signinModalSet })(Header)
+export default connect(mapStateToProps, { signinModalSet, mobileMenuSet })(Header)

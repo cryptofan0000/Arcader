@@ -27,7 +27,6 @@ const Signup = ({ signinModalSet, signupModalSet, showSignupModal}) => {
     const [usercode, setUsercode] = useState('')
 
     const [signupstep, setSignupstep] = useState(1)
-    const [verifycode, setVerifycode] = useState(['', '', '', '', '', ''])
 
     const [profilename, setProfilename] = useState('')
     const [userbirth, setUserbirth] = useState('')
@@ -62,13 +61,6 @@ const Signup = ({ signinModalSet, signupModalSet, showSignupModal}) => {
 
     const handleSignup = () => {
         setSignupstep(signupstep + 1)
-    }
-
-    const handleVerifyCode = (value, index) => {
-        let temp = verifycode
-        temp[index] = value
-
-        setVerifycode({...verifycode, temp})
     }
 
     const handleVerify = () => {

@@ -83,6 +83,7 @@ PC Responsive
 
     .header-section, .logo-section {
         margin-left: 20px;
+        margin-right: 20px;
     }
 
     .game-logo-img {
@@ -442,5 +443,11 @@ PC Responsive
 
     .about-status {
         margin-top: 40px;
+    }
+
+    .btn-login {
+        width: 110px !important;
+        height: 40px !important;
+        font-size: 14px !important;
     }
 }

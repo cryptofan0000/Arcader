@@ -4,6 +4,7 @@ import Header from '../layout/header'
 import Footer from '../layout/footer'
 import Landing from '../layout/landing'
 import AuthContainer from '../auth/index'
+import MainMenu from '../layout/mainmenu'
 
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
@@ -30,17 +31,21 @@ const Home = ({showSigninModal}) => {
             <Fragment>
                 <AuthContainer />
             </Fragment>
+
+            <Fragment>
+                <MainMenu />
+            </Fragment>
             
         </Fragment>
     )
 }
 
 Home.propTypes = {
-    showSigninModal: PropTypes.bool
+    showSigninModal: PropTypes.bool,
 }
 
 const mapStateToProps = state => ({
-    showSigninModal: state.auth.showSigninModal
+    showSigninModal: state.auth.showSigninModal,
 })
 
 export default connect(mapStateToProps)(Home)

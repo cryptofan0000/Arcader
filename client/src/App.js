@@ -12,6 +12,7 @@ import './assets/fonts/index.css'
 import './index.css'
 import './assets/css/bootstrap-custom.css'
 import './assets/css/responsive.css'
+import './assets/css/menu.css'
 
 function App() {
   return (
