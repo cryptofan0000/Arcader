@@ -42,7 +42,8 @@ import IMG_LEADER07 from '../../assets/images/leaders/leader07-min.png'
 import IMG_LEADER08 from '../../assets/images/leaders/leader08-min.png'
 import IMG_LEADER09 from '../../assets/images/leaders/leader09-min.png'
 
-import IMG_SEMI_CIRCLE from '../../assets/images/effects/semicircle.png'
+import IMG_SEMI_CIRCLE from '../../assets/images/effects/semicircle-min.png'
+import IMG_SEMI_BACK from '../../assets/images/effects/semi-bg-min.png'
 
 const Landing = ({ signinModalSet, showSigninModal }) => {
     const handleLoginModal = () => {
@@ -84,6 +85,9 @@ const Landing = ({ signinModalSet, showSigninModal }) => {
                         <div className='semi-circle'>
                             <img src={IMG_SEMI_CIRCLE} />
                         </div>
+                        <div className='semi-back'>
+                            <img src={IMG_SEMI_BACK} style={{width: '100%'}} />
+                        </div>
                     </div>
                 </div>
 
@@ -101,12 +105,15 @@ const Landing = ({ signinModalSet, showSigninModal }) => {
                                 <div className='game-logo'>
                                     <img src={IMG_CS_GAME_LOGO} alt='cs-logo' />
                                 </div>
+                                <span>531 games</span>
                             </div>
                             <div className='game-section-card co-game-section-card'>
                                     <img src={IMG_CO_GAME_LOGO} alt='co-logo' />
+                                    <span>531 games</span>
                             </div>
                             <div className='game-section-card ft-game-section-card'>
                                     <img src={IMG_FT_GAME_LOGO} alt='ft-logo' />
+                                    <span>531 games</span>
                             </div>
                         </div>
                         <div className='match-cards'>

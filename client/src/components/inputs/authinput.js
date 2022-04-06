@@ -15,7 +15,7 @@ const AuthInput = ({value, setValue, icon, label, placeholder, type}) => {
                             <Fragment></Fragment>
                     }
                     
-                    <input type={type} placeholder={placeholder} value={value} onChange={(e) => setValue(e.target.value)} className='custom-input' />
+                    <input type={type} placeholder={placeholder} value={value} onChange={(e) => setValue(e.target.value)} className='custom-input' autoComplete='off' />
                 </div>
             </div>
         </Fragment>

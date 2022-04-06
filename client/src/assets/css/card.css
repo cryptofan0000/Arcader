@@ -7,6 +7,7 @@
     border-radius: 12px;
     position: relative;
     background-position: right top;
+    z-index: 10003;
 }
 
 .cs-icon-area {
