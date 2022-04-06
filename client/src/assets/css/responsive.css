@@ -25,6 +25,7 @@ PC Responsive
     .upcoming-games {
         width: 950px;
         margin-left: calc((100% - 950px) / 2);
+        margin-top: -50px;
     }
 
     .shadow-effect-img {
