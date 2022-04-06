@@ -349,7 +349,6 @@ PC Responsive
         height: 40px;
         padding-top: 7px;
         border-radius: 8px;
-        margin-left: 12px;
     }
 
     .hr-sep-line {
@@ -482,6 +481,10 @@ PC Responsive
     }
 
     .game-section-card > img {
+        width: 45px;
+    }
+
+    .game-section-card > div > img {
         width: 45px;
     }
 

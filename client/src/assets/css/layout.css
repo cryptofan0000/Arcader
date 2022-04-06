@@ -330,7 +330,7 @@
     border-radius: 12px !important;
     background-color: #8462FF !important;
     border-color: #8462FF !important;
-    z-index: 100;
+    z-index: 10006;
 }
 
 .brand-ambassadors {
@@ -382,9 +382,7 @@
 
 .social-section-bg {
     width: 1350px;
-    height: 150px;
-    /*background-color: #04060A;*/
-    /*border-radius: 12px;*/
+    height: 130px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
