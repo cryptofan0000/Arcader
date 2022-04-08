@@ -688,11 +688,11 @@ select:-webkit-autofill {
 .sidebar-section {
     width: 294px;
     background-color: #171928;
-    height: 100vh;
+    height: calc(100vh - 80px);
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: start;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .main-login-custom {
@@ -707,10 +707,78 @@ select:-webkit-autofill {
     width: 254px;
     height: 285px;
     border-radius: 12px;
-    background-color: #1D1F32;
     background-image: url(../images/games/myinfo-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.my-avatar {
+    background-image: url(../images/games/my-avatar-bg.svg);
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    width: 100px;
+    height: 110px;
+    background-repeat: no-repeat;
+}
+
+.my-avatar > img {
+    width: 91px;
+    height: 101px;
+}
+
+.my-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.my-info-name {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.my-info-balance {
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.my-info-balance > img {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+.my-archieve {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.archieve {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.archieve span:nth-child(1) {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.archieve span:nth-child(2) {
+    font-size: 14px;
+    color: #3D475F;
+}
+
+.matches-section {
+    width: 100%;
 }
