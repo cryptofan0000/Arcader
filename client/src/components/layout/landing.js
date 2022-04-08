@@ -93,7 +93,7 @@ const Landing = ({ signinModalSet, showSigninModal }) => {
 
                 <div className='upcoming-games'>
                     <div className='row'>
-                        <span className='upcoming-title-span'>Live&nbsp;<span className='upcoming-spec'>Games</span></span>
+                        <span className='upcoming-title-span'><a href='/speculators'>Live&nbsp;<span className='upcoming-spec'>Games</span></a></span>
                     </div>
                     <div className='row'>
                         <span className='upcoming-detail-span'>Choose a game right now. Participate in battles or place bets online.</span>

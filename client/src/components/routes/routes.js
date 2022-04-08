@@ -1,18 +1,21 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 import { Route, Switch } from 'react-router-dom'
 
-import Header from '../layout/header'
-import Footer from '../layout/footer'
+import MainHeader from '../layout/mainheader'
+import Sidebar from '../layout/sidebar'
+
+import Speculators from '../speculators/index'
 
 const Routes = props => {
   return (
-    <>
-      <Header />
+    <Fragment>
+      <MainHeader />
+      <Sidebar />
       <Switch>
+        <Route exact path='/speculators' component={Speculators} />
       </Switch>
-      <Footer />
-    </>
-  );
-};
+    </Fragment>
+  )
+}
 
-export default Routes;
+export default Routes

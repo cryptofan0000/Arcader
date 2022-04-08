@@ -680,3 +680,37 @@ select:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 1000px #090d15 inset !important;
   -webkit-text-fill-color: white !important;
 }
+
+.main-header-section {
+    justify-content: space-between;
+}
+
+.sidebar-section {
+    width: 294px;
+    background-color: #171928;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+}
+
+.main-login-custom {
+    margin-left: 55px;
+}
+
+.main-flag-custom {
+    margin-left: 70px;
+}
+
+.myinfo-section {
+    width: 254px;
+    height: 285px;
+    border-radius: 12px;
+    background-color: #1D1F32;
+    background-image: url(../images/games/myinfo-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
