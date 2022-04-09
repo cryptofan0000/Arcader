@@ -9,11 +9,13 @@ import Speculators from '../speculators/index'
 const Routes = props => {
   return (
     <Fragment>
-      <MainHeader />
-      <Sidebar />
-      <Switch>
-        <Route exact path='/speculators' component={Speculators} />
-      </Switch>
+    <MainHeader />
+      <div className='main-game-section'>
+        <Sidebar />
+        <Switch>
+          <Route exact path='/speculators' component={Speculators} />
+        </Switch>
+      </div>
     </Fragment>
   )
 }

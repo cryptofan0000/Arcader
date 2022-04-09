@@ -691,7 +691,7 @@ select:-webkit-autofill {
     height: calc(100vh - 80px);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
 }
 
@@ -781,4 +781,49 @@ select:-webkit-autofill {
 
 .matches-section {
     width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sidebar-menu-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 254px;
+    height: 48px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.sidebar-menu-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar-game-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar-menu-item > div> span {
+    font-size: 14px;
+    color: #8997A9;
+}
+
+.sidebar-hr {
+    width: 254px;
+    height: 1px;
+    background-color: #252C46;
+}
+
+.main-game-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
