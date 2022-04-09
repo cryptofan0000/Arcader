@@ -14,7 +14,9 @@ const ProfileHeader = ({headerData}) => {
     return (
         <Fragment>
             <div className='profile-header-section'>
-                <img src={RESOURCE_URL + 'profile/' + headerData.bgImg} alt='profile-bg' className='profile-bg' />
+                <div className='profile-bg-section'>
+                    <img src={RESOURCE_URL + 'profile/' + headerData.bgImg} alt='profile-bg' className='profile-bg' />
+                </div>
                 <div className='avatar-section'>
                     <img src={RESOURCE_URL + 'profile/' + headerData.avatar} className='avatar-img' />
                 </div>
