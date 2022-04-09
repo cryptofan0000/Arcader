@@ -5,6 +5,7 @@ import MainHeader from '../layout/mainheader'
 import Sidebar from '../layout/sidebar'
 
 import Speculators from '../speculators/index'
+import Profile from '../profile/index'
 
 const Routes = props => {
   return (
@@ -14,6 +15,7 @@ const Routes = props => {
         <Sidebar />
         <Switch>
           <Route exact path='/speculators' component={Speculators} />
+          <Route exact path='/myprofile' component={Profile} />
         </Switch>
       </div>
     </Fragment>
