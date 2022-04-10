@@ -2,6 +2,7 @@ import React, { Fragment, useEffect, useState } from 'react'
 
 import ProfileHeader from './profileheader'
 import ProfileGameCards from './profilegames'
+import ProfileTable from './profiletable'
 
 import '../../assets/css/profile.css'
 
@@ -23,12 +24,13 @@ const Profile = () => {
         }
         setProfileData(_profileData)
     }, [])
-    
+
     return (
         <Fragment>
             <div className='my-profile-section'>
                 <ProfileHeader headerData={profileData} />
                 <ProfileGameCards />
+                <ProfileTable />
             </div>
         </Fragment>
     )

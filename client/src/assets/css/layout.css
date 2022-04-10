@@ -693,6 +693,11 @@ select:-webkit-autofill {
     flex-direction: column;
     justify-content: start;
     align-items: center;
+    overflow-y: auto;
+}
+
+.sidebar-section::-webkit-scrollbar {
+    width: 0px;
 }
 
 .main-login-custom {
@@ -705,7 +710,7 @@ select:-webkit-autofill {
 
 .myinfo-section {
     width: 254px;
-    height: 285px;
+    min-height: 285px;
     border-radius: 12px;
     background-image: url(../images/games/myinfo-bg.png);
     background-size: cover;

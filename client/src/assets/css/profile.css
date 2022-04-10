@@ -19,7 +19,7 @@
 
 .profile-header-section {
     width: calc(100% - 40px);
-    height: 519px;
+    min-height: 519px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,7 +34,7 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    left: calc((100% - 1586px) / 2);
+    /* left: calc((100% - 1586px) / 2); */
 }
 
 .profile-bg {
@@ -204,7 +204,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 1586px;
+    /* width: 1586px; */
+    width: calc(100% - 40px);
     margin-top: 30px;
     height: 260px;
 }
@@ -216,7 +217,8 @@
 }
 
 .profile-game-card {
-    width: 521px;
+    /* width: 521px; */
+    width: calc((100% - 40px) / 3 - 3px);
     height: 260px;
     border-radius: 6px;
     display: flex;
@@ -325,4 +327,156 @@
     font-size: 24px;
     font-weight: bold;
     color: #FFFFFF;
+}
+
+.profile-table-section {
+    width: calc(100% - 40px);
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.tap-center {
+    justify-content: center;
+}
+
+.profile-table-logo {
+    background-image: url(../images/games/profile-result.png);
+    width: 100%;
+    height: 102px;
+    border-radius: 12px;
+    margin-top: 30px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.profile-table-logo span:nth-child(1) {
+    font-size: 32px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(90deg, rgb(17, 255, 112), rgb(17, 255, 212));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.profile-table-logo span:nth-child(2) {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.profile-table-logo span:nth-child(3) {
+    font-size: 32px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(90deg, rgb(253, 52, 52), rgb(255, 68, 68));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.profile-table-card-section {
+    width: 100%;
+    height: 90px;
+    min-height: 90px;
+    border-radius: 12px;
+    border: solid 1px #171C2F;
+    background-color: #191D2D;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.profile-table-data-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.profile-table-row {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.profile-card-bg-cs {
+    background-image: url(../images/games/cs-bg.png);
+    width: 755px;
+    height: 90px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.profile-card-logo-cs {
+    background-image: url(../images/icons/profile-table-cs-logo.svg);
+    width: 77px;
+    height: 33px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.profile-card-bg-co {
+    background-image: url(../images/games/co-bg.png);
+    width: 755px;
+    height: 90px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.profile-card-logo-co {
+    background-image: url(../images/icons/profile-table-co-logo.svg);
+    width: 97px;
+    height: 18px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.profile-card-bg-ft {
+    background-image: url(../images/games/ft-bg.png);
+    width: 755px;
+    height: 90px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.profile-card-logo-ft {
+    background-image: url(../images/icons/profile-table-ft-logo.svg);
+    width: 82px;
+    height: 24px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.profile-table-logo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-table-logo-section > span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #626F8C;
 }
