@@ -2,14 +2,14 @@ import React, {Fragment} from 'react'
 import DatePicker from 'react-datepicker'
 import 'react-datepicker/dist/react-datepicker.css'
 
-const AuthDate = ({value, setValue, icon, label, placeholder}) => {
+const AuthDate = ({value, setValue, icon, label, placeholder, classes}) => {
     return (
         <Fragment>
             <div className='auth-input-section'>
                 <span className='input-label'>
                     {label ? label : ''}
                 </span>
-                <div className='custom-input-section'>
+                <div className={'custom-input-section ' + classes}>
                     {
                         icon ? 
                             <img src={icon} alt='input-icon' />

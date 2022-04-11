@@ -1,13 +1,13 @@
 import React, {Fragment} from 'react'
 
-const AuthInput = ({value, setValue, icon, label, placeholder, type}) => {
+const AuthInput = ({value, setValue, icon, label, placeholder, type, classes}) => {
     return (
         <Fragment>
             <div className='auth-input-section'>
                 <span className='input-label'>
                     {label ? label : ''}
                 </span>
-                <div className='custom-input-section'>
+                <div className={'custom-input-section ' + classes}>
                     {
                         icon ? 
                             <img src={icon} alt='input-icon' />

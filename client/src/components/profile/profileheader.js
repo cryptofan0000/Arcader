@@ -35,10 +35,10 @@ const ProfileHeader = ({headerData}) => {
                             <span>Registration:&nbsp;<span>{headerData.regDate}</span></span>
                         </div>
                         <div className='edit-profile-section'>
-                            <div className='btn-edit-profile'>
+                            <a href='/profile-edit' className='btn-edit-profile'>
                                 <img src={IMG_PENCIL_ICO} alt='icon' className='pencil-ico' />
                                 <span>Edit Profile</span>
-                            </div>
+                            </a>
                         </div>
                     </div>
                     <div className='social-profile'>

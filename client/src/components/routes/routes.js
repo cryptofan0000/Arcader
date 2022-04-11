@@ -6,6 +6,7 @@ import Sidebar from '../layout/sidebar'
 
 import Speculators from '../speculators/index'
 import Profile from '../profile/index'
+import ProfileEdit from '../profileedit/index'
 
 const Routes = props => {
   return (
@@ -16,6 +17,7 @@ const Routes = props => {
         <Switch>
           <Route exact path='/speculators' component={Speculators} />
           <Route exact path='/myprofile' component={Profile} />
+          <Route exact path='/profile-edit' component={ProfileEdit} />
         </Switch>
       </div>
     </Fragment>

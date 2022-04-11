@@ -1,4 +1,5 @@
 import React, { Fragment, useEffect, useState } from 'react'
+import ReactPaginate from 'react-paginate'
 
 import FilterTap from '../items/filtertap'
 import ProfileTableCard from '../cards/profiletablecard'
@@ -15,41 +16,101 @@ const ProfileTable = () => {
             {
                 gameType: 'cs',
                 time: '23:00',
-                aprAmount: '16'
+                aprAmount: '16',
+                gamePlayerAvatarA: ['team01.png'],
+                gamePlayerNamesA: ['Brooklyn Simonos'],
+                gamePlayerAvatarB: ['team02.png'],
+                gamePlayerNamesB: ['Esther Howard'],
+                kills: '13',
+                death: '2',
+                winrounds: '13',
+                loserounds: '3',
             },
             {
                 gameType: 'ft',
                 time: '23:00',
-                aprAmount: '16'
+                aprAmount: '16',
+                gamePlayerAvatarA: ['team01.png'],
+                gamePlayerNamesA: ['Brooklyn Simonos'],
+                gamePlayerAvatarB: ['team02.png'],
+                gamePlayerNamesB: ['Esther Howard'],
+                kills: '13',
+                death: '2',
+                winrounds: '13',
+                loserounds: '3',
             },
             {
                 gameType: 'cs',
                 time: '23:00',
-                aprAmount: '16'
+                aprAmount: '16',
+                gamePlayerAvatarA: ['team01.png'],
+                gamePlayerNamesA: ['Brooklyn Simonos'],
+                gamePlayerAvatarB: ['team02.png'],
+                gamePlayerNamesB: ['Esther Howard'],
+                kills: '13',
+                death: '2',
+                winrounds: '13',
+                loserounds: '3',
             },
             {
                 gameType: 'co',
                 time: '23:00',
-                aprAmount: '16'
+                aprAmount: '16',
+                gamePlayerAvatarA: ['team01.png'],
+                gamePlayerNamesA: ['Brooklyn Simonos'],
+                gamePlayerAvatarB: ['team02.png'],
+                gamePlayerNamesB: ['Esther Howard'],
+                kills: '13',
+                death: '2',
+                winrounds: '13',
+                loserounds: '3',
             },
             {
                 gameType: 'cs',
                 time: '23:00',
-                aprAmount: '16'
+                aprAmount: '16',
+                gamePlayerAvatarA: ['team01.png'],
+                gamePlayerNamesA: ['Brooklyn Simonos'],
+                gamePlayerAvatarB: ['team02.png'],
+                gamePlayerNamesB: ['Esther Howard'],
+                kills: '13',
+                death: '2',
+                winrounds: '13',
+                loserounds: '3',
             },
             {
                 gameType: 'ft',
                 time: '23:00',
-                aprAmount: '16'
+                aprAmount: '16',
+                gamePlayerAvatarA: ['team01.png'],
+                gamePlayerNamesA: ['Brooklyn Simonos'],
+                gamePlayerAvatarB: ['team02.png'],
+                gamePlayerNamesB: ['Esther Howard'],
+                kills: '13',
+                death: '2',
+                winrounds: '13',
+                loserounds: '3',
             },
             {
                 gameType: 'co',
                 time: '23:00',
-                aprAmount: '16'
+                aprAmount: '16',
+                gamePlayerAvatarA: ['team01.png'],
+                gamePlayerNamesA: ['Brooklyn Simonos'],
+                gamePlayerAvatarB: ['team02.png'],
+                gamePlayerNamesB: ['Esther Howard'],
+                kills: '13',
+                death: '2',
+                winrounds: '13',
+                loserounds: '3',
             }
         ]
         setProfileTableData(_tempTableData)
     }, [])
+
+    const handlePageClick = () => {
+
+    }
 
     return (
         <Fragment>
@@ -78,6 +139,17 @@ const ProfileTable = () => {
                         :
                             <Fragment></Fragment>
                     }
+                </div>
+                <div className='profile-table-pagenation'>
+                    <ReactPaginate
+                        breakLabel="..."
+                        nextLabel=">"
+                        onPageChange={handlePageClick}
+                        pageRangeDisplayed={5}
+                        pageCount={100}
+                        previousLabel="<"
+                        renderOnZeroPageCount={null}
+                    />
                 </div>
             </div>
         </Fragment>
