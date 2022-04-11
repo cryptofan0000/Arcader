@@ -1,11 +1,21 @@
 import React, { Fragment } from 'react'
 
+import { connect } from 'react-redux'
+import PropTypes from 'prop-types'
+import { couponMenuSet } from '../../actions/coupon'
+
 import IMG_WATCH_ICO from '../../assets/images/icons/watch.svg'
 import IMG_PLAY_ICO from '../../assets/images/icons/play.svg'
 
 const RESOURCE_URL = 'resources/images/'
 
-const GameTableCard = ({data}) => {
+const GameTableCard = ({data, couponMenuSet, showCouponMenu}) => {
+    const handleInvite = () => {
+        if(!showCouponMenu) {
+            couponMenuSet(true)
+        }
+    }
+
     return (
         <Fragment>
             <div className='game-table-card-section'>
@@ -43,10 +53,10 @@ const GameTableCard = ({data}) => {
                     </div>
 
                     <div className='player-invite-section'>
-                        <div className='invite-action'>
+                        <div className='invite-action' onClick={handleInvite}>
                             <span>{'2.1x'}</span>
                         </div>
-                        <div className='invite-action'>
+                        <div className='invite-action' onClick={handleInvite}>
                             <span>{'1.4x'}</span>
                         </div>
                     </div>
@@ -71,4 +81,14 @@ const GameTableCard = ({data}) => {
     )
 }
 
-export default GameTableCard
+GameTableCard.propTypes = {
+    data: PropTypes.object,
+    couponMenuSet: PropTypes.func.isRequired,
+    showCouponMenu: PropTypes.bool
+}
+
+const mapStateToProps = state => ({
+    showCouponMenu: state.coupon.showCouponMenu
+})
+
+export default connect(mapStateToProps, { couponMenuSet })(GameTableCard)

@@ -832,3 +832,235 @@ select:-webkit-autofill {
     flex-direction: row;
     justify-content: center;
 }
+
+.coupon-section {
+    position: absolute;
+    width: 352px;
+    height: 100vh;
+    background-color: #1B2134;
+    right: 0px;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 20px;
+}
+
+.coupon-tap-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.coupon-tap {
+    width: 156px;
+    border-bottom: solid 1px #252C46;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+}
+
+.active-tap {
+    border-bottom: solid 2px #7C46F1;
+}
+
+.coupon-tap > span {
+    font-size: 16px;
+    color: #626F8C;
+}
+
+.active-tap > span {
+    color: #FFFFFF;
+}
+
+.coupon-msg-sections {
+    width: 100%;
+    height: calc(100vh - 440px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    overflow-y: auto;
+}
+
+.coupon-msg-sections::-webkit-scrollbar {
+    width: 6px;
+}
+
+.coupon-msg-sections::-webkit-scrollbar-thumb {
+    background-color: #3D475F;
+}
+
+.coupon-msg {
+    width: 100%;
+    border-bottom: solid 1px #252C46;
+    padding: 10px 0px;
+}
+
+.coupon-msg-sections div.coupon-msg:last-child {
+    border-bottom: none;
+}
+
+.msg-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+.msg-close {
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/icons/close-ico-sm.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.msg-preheader > img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.msg-preheader > span {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.msg-winner span:first-child {
+    font-size: 14px;
+    color: #8997A9;
+    margin-right: 10px;
+}
+
+.msg-winner span:last-child {
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.msg-winner img {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+.win-amount {
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.amount-input-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.amount-input-section > span {
+    font-size: 14px;
+    color: #8997A9;
+    margin-bottom: 5px;
+}
+
+.ard-input {
+    width: 100%;
+    height: 52px;
+    border-radius: 12px;
+    background-color: #090D15;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ard-input > span {
+    color: #3D475F;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.number-btns {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.number-input-btn {
+    width: 69px;
+    height: 37px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #8997A9;
+}
+
+.coupon-hr-line {
+    width: 100%;
+    height: 1px;
+    background-color: #252C46;
+}
+
+.confirm-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.confirm-section > span {
+    font-size: 14px;
+    color: #8997A9;
+}
+
+.confirm-section span:last-child {
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.btn-confirm {
+    width: 100%;
+    height: 52px;
+    background-image: linear-gradient(to right, rgb(124, 70, 241), rgb(117, 81, 248));
+    border-radius: 12px;
+    border: solid 1px #8462FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.confirm-result-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.confirm-result-section > div {
+    color: #8997A9;
+    font-size: 14px;
+}
+
+.confirm-result-section > div > span {
+    color: #FFFFFF;
+}

@@ -3,12 +3,13 @@ import { Route, Switch } from 'react-router-dom'
 
 import MainHeader from '../layout/mainheader'
 import Sidebar from '../layout/sidebar'
+import Coupon from '../coupon'
 
 import Speculators from '../speculators/index'
 import Profile from '../profile/index'
 import ProfileEdit from '../profileedit/index'
 
-const Routes = props => {
+const Routes = () => {
   return (
     <Fragment>
     <MainHeader />
@@ -19,6 +20,7 @@ const Routes = props => {
           <Route exact path='/myprofile' component={Profile} />
           <Route exact path='/profile-edit' component={ProfileEdit} />
         </Switch>
+        <Coupon />
       </div>
     </Fragment>
   )
