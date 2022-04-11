@@ -728,3 +728,203 @@
     width: 100%;
     height: 100%;
 }
+
+.edist-pass-text {
+    font-size: 16px;
+    color: #8997A9;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+}
+
+.change-pass-aciton {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn-change-pass {
+    width: 100%;
+    height: 52px;
+    border-radius: 12px;
+    background-image: linear-gradient(to right, rgb(124, 70, 241), rgb(117, 81, 248));
+    border: solid 1px #8462FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.edit-socail-actions {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.edit-social-text {
+    color: #8997A9;
+    font-size: 16px;
+}
+
+.edit-social-action {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.edit-social-btn {
+    width: 30%;
+    height: 52px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    color: #FFFFFF;
+}
+
+.edit-social-btn > img {
+    margin-right: 5px;
+}
+
+.btn-conn-twitch {
+    background-color: #8C45F7;
+    border: solid 1px #8462FF;
+}
+
+.btn-conn-youtube {
+    background-color: #FA3232;
+    border: solid 1px #FF5252;
+}
+
+.btn-conn-stream {
+    background-color: #106697;
+    border: solid 1px #2687BE;
+}
+
+.btn-conn-battle {
+    background-color: #0175F7;
+    border: solid 1px #3392FC;
+}
+
+.edit-social-inputs {
+    width: 30%;
+    height: 52px;
+}
+
+.edit-social-input {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #090D15;
+    border-radius: 12px;
+    padding: 0px 12px;
+}
+
+.remove-section {
+    background-image: url(../images/icons/remove-text.svg);
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.profile-edit-section div.edit-sub-section:last-child {
+    margin-bottom: 50px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 28px;
+}
+
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #292B39;
+  border: solid 1px #323544;
+  border-radius: 8px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 8px;
+}
+
+input:checked + .slider {
+    background-image: linear-gradient(to right, rgb(124, 70, 241), rgb(117, 81, 248));
+    border-radius: 8px;
+    border: solid 1px #8462FF;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(25px);
+  -ms-transform: translateX(25px);
+  transform: translateX(25px);
+}
+
+.custom-toggle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.custom-toggle > span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #8997A9;
+    margin-left: 20px;
+}
+
+input:focus, .switch, .slider {
+    outline: none;
+}
