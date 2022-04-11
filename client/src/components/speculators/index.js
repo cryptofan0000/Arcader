@@ -2,12 +2,15 @@ import React, {Fragment, useEffect, useState} from 'react'
 
 import SpecFilter from './filter'
 import GamesTable from '../games/gamestable'
+import KycVerify from './kycverify'
 
 import '../../assets/css/speculator.css'
 
 const Speculators = () => {
 	const [liveGameData, setLiveGameData] = useState([])
 	const [gameData, setGameData] = useState([])
+
+	const [modalShow, setModalShow] = useState(true)
 
 	useEffect(() => {
 		const _tempLivegames = [
@@ -129,8 +132,13 @@ const Speculators = () => {
 		setGameData(_tempGames)
 	}, [])
 
+	const handleClose = () => {
+		setModalShow(false)
+	}
+
 	return (
 		<Fragment>
+			<KycVerify modalShow={modalShow} handleClose={handleClose} />
 			<div className='spec-data-section'>
 				<SpecFilter />
 				<div className='spec-game-data-section'>

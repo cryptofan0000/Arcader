@@ -202,6 +202,14 @@
     height: calc(100vh - 270px);
 }
 
+.spec-game-data-section div.game-table-section:last-child {
+    margin-bottom: 50px;
+}
+
+.game-table-body div.game-table-data:last-child {
+    margin-bottom: 10px;
+}
+
 .game-table-section {
     width: 100%;
     margin-top: 20px;
@@ -247,4 +255,35 @@
 .game-table-data {
     width: 100%;
     margin-top: 10px;
+}
+
+.kycverify-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 190px;
+}
+
+.kycverify-section > div:first-child {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.kycverify-section > div:nth-child(2) {
+    color: #8997A9;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.btn-kycverify {
+    width: 476px;
+    height: 52px;
+    background-image: linear-gradient(to right, rgb(124, 70, 241), rgb(117, 81, 248));
+    border: solid 1px #8462FF;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
