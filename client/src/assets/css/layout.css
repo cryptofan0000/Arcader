@@ -1068,3 +1068,131 @@ select:-webkit-autofill {
 .confirm-result-section > div > span {
     color: #FFFFFF;
 }
+
+.winner-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.winner-section div:first-child {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.winner-section div:nth-child(2) {
+    font-size: 16px;
+    color: #8997A9;
+    margin-bottom: 10px;
+}
+
+.winner-section div:nth-child(3) {
+    margin-bottom: 20px;
+}
+
+.winner-section div:nth-child(3) > img {
+    width: 32px;
+    height: 32px;
+}
+
+.winner-section div:nth-child(3) > span {
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-left: 20px;
+}
+
+.winner-section div:nth-child(5) {
+    color: #8997A9;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.winner-section div:nth-child(5) > span {
+    color: #FFFFFF;
+}
+
+.winner-detail-bg {
+    background-image: url(../images/games/winnerbg.png);
+    width: 100%;
+    height: 96px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: space-around;
+}
+
+.winner-detail-bg > div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.winner-detail-bg div:first-child > span:first-child {
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.winner-detail-bg div:first-child > span:last-child {
+    font-size: 20px;
+    color: #FED262;
+    font-weight: bold;
+}
+
+.winner-detail-bg div:last-child > span:first-child {
+    font-size: 24px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.winner-detail-bg div:last-child > span:last-child {
+    font-size: 14px;
+    color: #8997A9;
+}
+
+.lose-action-area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.lose-report-btn {
+    width: 160px !important;
+    height: 52px !important;
+    border-radius: 12px !important;
+    background-color: rgba(255, 255, 255, 0.08) !important;
+    color: #FFFFFF !important;
+    font-size: 14px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-weight: normal !important;
+    margin-bottom: 0px !important;
+}
+
+.okay-btn {
+    width: 294px !important;
+    height: 52px !important;
+    border-radius: 12px !important;
+    background-image: linear-gradient(to right, rgb(124, 70, 241), rgb(117, 81, 248)) !important;
+    border: solid 1px #8462FF !important;
+    font-size: 16px !important;
+    color: #FFFFFF !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-weight: normal !important;
+    margin-bottom: 0px !important;
+}

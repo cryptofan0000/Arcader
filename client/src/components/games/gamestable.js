@@ -6,10 +6,6 @@ const GamesTable = ({title, data}) => {
         <div className='game-table-section'>
             <div className='game-table-header'>
                 <span>{title}</span>
-                {/* <div>
-                    <span>1</span>
-                    <span>2</span>
-                </div> */}
             </div>
             <div className='game-table-body'>
                 {

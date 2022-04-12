@@ -4,6 +4,7 @@ import { Route, Switch } from 'react-router-dom'
 import MainHeader from '../layout/mainheader'
 import Sidebar from '../layout/sidebar'
 import Coupon from '../coupon'
+import MainMenu from '../layout/mainmenu'
 
 import Speculators from '../speculators/index'
 import Profile from '../profile/index'
@@ -13,6 +14,7 @@ const Routes = () => {
   return (
     <Fragment>
     <MainHeader />
+    <MainMenu />
       <div className='main-game-section'>
         <Sidebar />
         <Switch>
