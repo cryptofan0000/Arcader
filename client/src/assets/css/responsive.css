@@ -656,4 +656,32 @@ PC Responsive
     .stream-action > span {
         font-size: 14px;
     }
+
+    .game-filter-select {
+        width: 100%;
+        margin-top: 20px;
+        position: relative;
+    }
+
+    .custom-option-section {
+        width: 100%;
+    }
+
+    .custom-selector {
+        width: 100%;
+    }
+
+    .custom-options-sections {
+        margin-bottom: 20px;
+        margin-right: 0px;
+    }
+
+    .custom-options-section {
+        position: absolute;
+        width: 100%;
+    }
+
+    .coupon-section {
+        width: 100%;
+    }
 }

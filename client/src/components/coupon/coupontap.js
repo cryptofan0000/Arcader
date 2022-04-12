@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+
 const CouponTap = ({title, state, setActive}) => {
     return (
         <Fragment>

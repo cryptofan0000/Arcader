@@ -10,7 +10,7 @@ import IMG_FILTER_FT from '../../assets/images/icons/filter-ft-ico.svg'
 
 import IMG_SORT from '../../assets/images/icons/option_asc_ico.svg'
 
-const SpecFilter = () => {
+const SpecFilter = ({onHandleFilter}) => {
     const [gameOption, setGameoption] = useState([])
     const [placeOption, setPlaceoption] = useState([])
     const [sortOption, setSortoption] = useState([])
@@ -23,6 +23,10 @@ const SpecFilter = () => {
         const _sortOptions = ['Time', 'Entrance Fee', 'Prize']
         setSortoption(_sortOptions)
     }, [])
+
+    const handleFilter = () => {
+        onHandleFilter(true)
+    }
 
     return (
         <Fragment>
@@ -46,7 +50,7 @@ const SpecFilter = () => {
             </div>
 
             <div className='mobile-spec-filter'>
-                <div className='filter-btn'>Filter</div>
+                <div className='filter-btn' onClick={handleFilter}>Filter</div>
                 <div className='mobile-sort-result'>
                     <span>Sort By</span>
                     <img src={IMG_SORT} alt='sort' />
