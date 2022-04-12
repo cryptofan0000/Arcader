@@ -928,3 +928,117 @@ input:checked + .slider:before {
 input:focus, .switch, .slider {
     outline: none;
 }
+
+.mobile-profile-social {
+    display: none;
+}
+
+.mobile-profile-benefit-section {
+    display: none;
+}
+
+.exit-account {
+    display: none;
+}
+
+@media screen and (max-width: 1400px) {
+    .profile-game-card-bg {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .my-profile-section {
+        width: 100%;
+        height: calc(100vh - 70px);
+    }
+
+    .profile-header-section {
+        width: 100%;
+        margin-top: 0px;
+        height: 644px;
+        min-height: 644px;
+    }
+
+    .social-profile {
+        display: none;
+    }
+
+    .profile-games-section {
+        width: 800px;
+    }
+
+    .profile-game-card-bg {
+        display: none;
+    }
+
+    .profile-game-card {
+        padding-left: 10px;
+        width: 250px;
+    }
+
+    .profile-bg-section {
+        left: calc((100% - 1586px) / 2);
+    }
+    
+    .mobile-profile-social {
+        display: block;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .profile-benefit-section {
+        display: none;
+    }
+    
+    .mobile-profile-benefit-section {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .profile-name-section > span {
+        font-size: 24px;
+    }
+
+    .btn-edit-profile {
+        height: 40px;
+        border-radius: 8px;
+    }
+
+    .pencil-ico {
+        width: 18px;
+        height: 18px;
+    }
+
+    .profile-benefit span:first-child {
+        font-size: 16px;
+    }
+
+    .profile-benefit span:last-child {
+        font-size: 12px;
+    }
+
+    .profile-social-links {
+        width: 46px;
+        height: 46px;
+    }
+
+    .exit-account {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .exit-account > span {
+        font-size: 14px;
+        color: #3D475F;
+        margin-left: 10px;
+    }
+}
