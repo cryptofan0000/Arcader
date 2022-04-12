@@ -338,6 +338,10 @@
     align-items: center;
 }
 
+.mobile-game-table-card-section {
+    display: none;
+}
+
 .game-data-detail-section {
     display: flex;
     flex-direction: row;

@@ -53,6 +53,10 @@
     margin-left: 20px;
 }
 
+.mobile-my-info {
+    display: none;
+}
+
 .token-price-span {
     color: #626F8C;
     font-size: 14px;

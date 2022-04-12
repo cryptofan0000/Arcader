@@ -15,6 +15,8 @@ import IMG_MG_ICO from '../../assets/images/icons/msg-ico.svg'
 import IMG_IG_ICO from '../../assets/images/icons/instagram-ico.svg'
 
 import IMG_MENU_ICO from '../../assets/images/icons/mobile-menu-ico.svg'
+import IMG_METAMASK from '../../assets/images/icons/metamask-ico-sm.svg'
+import IMG_MY_TEAM from '../../assets/images/leaders/leader07-min.png'
 
 const MainHeader = ({ signinModalSet, mobileMenuSet, showSigninModal, showMobileMenu }) => {
     const handleLoginModal = () => {
@@ -32,7 +34,7 @@ const MainHeader = ({ signinModalSet, mobileMenuSet, showSigninModal, showMobile
 
     return (
         <Fragment>
-            <div className='header'>
+            <div className='header main-header'>
                 <div className='mobile-menu' onClick={handleMobileMenu}>
                     <img src={IMG_MENU_ICO} alt='mobile-icon' className='mobile-menu-ico' />
                 </div>
@@ -45,6 +47,12 @@ const MainHeader = ({ signinModalSet, mobileMenuSet, showSigninModal, showMobile
                         <div className='lang-flag-section main-flag-custom'>
                             <img src={IMG_FLAG_EN} alt='en-flag' className='flag-en-img' />
                             <span className='lang-name-span'>EN</span>
+                        </div>
+
+                        <div className='mobile-my-info'>
+                            <img src={IMG_METAMASK} alt='metamask' />
+                            <span>3.54 BNB</span>
+                            <img src={IMG_MY_TEAM} alt='my-team' />
                         </div>
 
                         <div className='token-price-section'>
