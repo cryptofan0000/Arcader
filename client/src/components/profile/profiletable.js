@@ -141,6 +141,7 @@ const ProfileTable = () => {
                     }
                 </div>
                 <div className='profile-table-pagenation'>
+                    <div className='mobile-next-btn'>Next page</div>
                     <ReactPaginate
                         breakLabel="..."
                         nextLabel=">"

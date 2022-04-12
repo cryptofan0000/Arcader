@@ -557,6 +557,7 @@
     justify-content: center;
     margin-bottom: 50px;
     margin-top: 20px;
+    flex-direction: column;
 }
 
 .profile-table-pagenation > ul {
@@ -567,6 +568,7 @@
     justify-content: space-between;
     height: 42px;
     list-style-type: none;
+    padding: 0px;
 }
 
 .profile-table-pagenation > ul > li > a {
@@ -941,6 +943,14 @@ input:focus, .switch, .slider {
     display: none;
 }
 
+.profile-table-card-mobile {
+    display: none;
+}
+
+.mobile-next-btn {
+    display: none;
+}
+
 @media screen and (max-width: 1400px) {
     .profile-game-card-bg {
         display: none;
@@ -1040,5 +1050,151 @@ input:focus, .switch, .slider {
         font-size: 14px;
         color: #3D475F;
         margin-left: 10px;
+    }
+
+    .filter-tap-section div.filter-tap-item:first-child {
+        margin-left: 0px;
+    }
+
+    .filter-tap-item {
+        width: 116px;
+    }
+
+    .profile-table-logo {
+        background-image: url(../images/games/profile-result-mobile.png);
+        height: 82px;
+    }
+
+    .profile-table-logo span:nth-child(2) {
+        font-size: 14px;
+    }
+
+    .profile-table-logo span:nth-child(1) {
+        font-size: 20px;
+    }
+
+    .profile-table-logo span:nth-child(3) {
+        font-size: 20px;
+    }
+
+    .profile-table-card-section {
+        display: none;
+    }
+
+    .profile-table-card-mobile {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 209px;
+        border-radius: 12px;
+        background-color: #191D2D;
+        border: solid 1px #171C2F;
+        position: relative;
+        padding: 10px 20px;
+    }
+
+    .profile-card-bg-cs {
+        background-image: url(../images/games/match-card-bg-min.png);
+        background-size: contain;
+        width: 373px;
+        height: 333px;
+        right: 0px;
+        top: 0px;
+    }
+
+    .profile-card-bg-co {
+        background-image: url(../images/games/match-card-bg-min.png);
+        background-size: contain;
+        width: 373px;
+        height: 333px;
+        right: 0px;
+        top: 0px;
+    }
+
+    .profile-card-bg-ft {
+        background-image: url(../images/games/match-card-bg-min.png);
+        background-size: contain;
+        width: 373px;
+        height: 333px;
+        right: 0px;
+        top: 0px;
+    }
+
+    .mobile-profile-table-header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .mobile-profile-table-header > span {
+        font-size: 12px;
+        color: #626F8C;
+    }
+
+    .profile-card-logo-cs {
+        width: 60px;
+        height: 26px;
+    }
+
+    .report-btn {
+        width: 120px;
+        font-size: 14px;
+        font-weight: normal;
+        height: 40px;
+        border-radius: 8px;
+    }
+
+    .header-hr-line {
+        width: 100%;
+        height: 1px;
+        background-color: #252C46;
+    }
+
+    .profile-table-player-section {
+        width: 100%;
+    }
+
+    .profile-table-result-section {
+        width: 100%;
+    }
+
+    .profile-table-result-section div.profile-result-kills:nth-child(1) span:last-child, .profile-table-result-section div.profile-result-kills:nth-child(3) span:last-child {
+        font-size: 20px;
+        font-weight: bold;
+        color: #FED262;
+    }
+
+    .profile-table-result-section div.profile-result-kills:nth-child(2) span:last-child, .profile-table-result-section div.profile-result-kills:nth-child(4) span:last-child {
+        font-size: 20px;
+        font-weight: bold;
+        color: #FF0000;
+    }
+
+    .profile-table-pagenation > ul {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .profile-table-pagenation > ul > li.previous, .profile-table-pagenation > ul > li.next {
+        display: none;
+    }
+
+    .mobile-next-btn {
+        display: block;
+        width: 100%;
+        height: 40px;
+        border-radius: 8px;
+        background-image: linear-gradient(to right, rgb(124, 70, 241), rgb(117, 81, 248));
+        border: solid 1px #8462FF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        font-size: 14px;
+        color: #FFFFFF;
     }
 }
