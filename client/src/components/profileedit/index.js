@@ -79,6 +79,10 @@ const ProfileEdit = () => {
                     <span>Edit Profile</span>
                 </div>
 
+                <div className='edit-back-mobile-section'>
+                    <a href='/myprofile'>{'<'}<span>&nbsp;Edit profile</span></a>
+                </div>
+
                 <div className='edit-sub-section'>
                     <div className='edit-sections-title'>
                         <span>Account</span>

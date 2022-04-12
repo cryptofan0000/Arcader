@@ -34,7 +34,7 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    /* left: calc((100% - 1586px) / 2); */
+    left: calc((100% - 1586px) / 2);
 }
 
 .profile-bg {
@@ -558,6 +558,7 @@
     margin-bottom: 50px;
     margin-top: 20px;
     flex-direction: column;
+    z-index: 5;
 }
 
 .profile-table-pagenation > ul {
@@ -630,6 +631,10 @@
     font-size: 32px;
     font-weight: bold;
     color: #FFFFFF;
+}
+
+.edit-back-mobile-section {
+    display: none;
 }
 
 .edit-sub-section {
@@ -1196,5 +1201,92 @@ input:focus, .switch, .slider {
         margin-bottom: 20px;
         font-size: 14px;
         color: #FFFFFF;
+    }
+
+    .profile-edit-section {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0px;
+        background-color: #171928;
+    }
+
+    .edit-back-mobile-section {
+        width: calc(100% - 40px);
+        margin-top: 20px;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
+    }
+
+    .edit-back-mobile-section > a {
+        color: #3D475F !important;
+    }
+
+    .edit-back-mobile-section > a > span {
+        font-size: 20px;
+        font-weight: bold;
+        color: #FFFFFF;
+    }
+
+    .edit-back-section {
+        display: none;
+    }
+
+    .edit-sub-section {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .edit-input-row {
+        flex-direction: column;
+    }
+
+    .edit-input-row > div {
+        width: 100% !important;
+        margin-bottom: 10px;
+    }
+
+    .edit-file-upload {
+        flex-direction: column;
+    }
+
+    .upload-action-section {
+        width: 100%;
+        order: 1;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .upload-action-section > span {
+        width: 220px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .portfolio-upload-btn {
+        width: 100%;
+        height: 40px;
+        border-radius: 8px;
+        font-size: 14px;
+    }
+
+    .upload-view-section {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .edit-social-action {
+        flex-direction: column;
+    }
+
+    .edit-social-btn {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .edit-social-inputs {
+        width: 100%;
     }
 }
