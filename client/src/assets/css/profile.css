@@ -52,6 +52,26 @@
     }
 }
 
+@media screen and (max-width: 1800px) {
+    .profile-game-card-bg {
+        width: 250px;
+    }
+
+    .co-game-card > img {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 1662px) {
+    .progress {
+        width: 180px !important;
+    }
+    
+    .profile-game-detail {
+        width: 160px !important;
+    }
+}
+
 .avatar-section {
     background-image: url(../../assets/images/games/avatar-wrap.png);
     width: 164px;
@@ -267,10 +287,9 @@
 
 .progress {
     height: 6px !important;
-    width: 200px !important;
     border-radius: 6px !important;
     background-color: rgba(255, 255, 255, 0.4) !important;
-    width: 224px !important;
+    width: 224px;
 }
 
 .progress-bar {
@@ -959,6 +978,18 @@ input:focus, .switch, .slider {
 @media screen and (max-width: 1400px) {
     .profile-game-card-bg {
         display: none;
+    }
+
+    .progress-section {
+        width: 90%;
+    }
+
+    .progress {
+        width: 100% !important;
+    }
+
+    .profile-game-detail {
+        width: 90% !important;
     }
 }
 

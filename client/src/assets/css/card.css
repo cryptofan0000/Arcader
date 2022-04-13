@@ -442,6 +442,18 @@
     justify-content: center;
 }
 
+@media screen and (max-width: 1660px) {
+    .invite-action {
+        width: 70px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .invite-action {
+        width: 50px;
+    }
+}
+
 .invite-action > span {
     font-size: 16px;
     font-weight: 600;
